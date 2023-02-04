@@ -77,4 +77,5 @@
   <line x1="0" y1="0" x2="0" y2="-30" class="minute" />
   <line x1="0" y1="0" x2="0" y2="-35" class="second" />
   <circle cx="0" cy="0" r="4" class="screw" />
+  <script href="clock-machine.js"></script>
 </svg>
