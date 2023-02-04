@@ -1,0 +1,80 @@
+<svg version="1.1" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dot-black">
+      <stop offset="0%" stop-color="black" />
+      <stop offset="1%" stop-color="black" />
+      <stop offset="1%" stop-color="transparent" />
+      <stop offset="99%" stop-color="transparent" />
+      <stop offset="99%" stop-color="black" />
+      <stop offset="100%" stop-color="black" />
+    </linearGradient>
+    <linearGradient id="dot-white">
+      <stop offset="0%" stop-color="white" />
+      <stop offset="1%" stop-color="white" />
+      <stop offset="1%" stop-color="transparent" />
+      <stop offset="99%" stop-color="transparent" />
+      <stop offset="99%" stop-color="white" />
+      <stop offset="100%" stop-color="white" />
+    </linearGradient>
+    <radialGradient id="silver" fx="" fy="" r="">
+      <stop offset="0" stop-color="lightgray" stop-opacity=""/>
+      <stop offset="100%" stop-color="gray" stop-opacity=""/>
+    </radialGradient>
+    <style>
+      .background {
+        fill: var(--bg, url(#silver));
+      }
+
+      .dot {
+        fill: var(--dot, url(#dot-black));
+      }
+      .dot-1 {
+        transform: rotate(30deg);
+      }
+      .dot-2 {
+        transform: rotate(60deg);
+      }
+      .dot-3 {
+        transform: rotate(90deg);
+      }
+      .dot-4 {
+        transform: rotate(120deg);
+      }
+      .dot-5 {
+        transform: rotate(150deg);
+      }
+
+      .hour, .minute, .second {
+        stroke-linecap: round;
+      }
+      .hour {
+        stroke: var(--hour-color, black);
+        stroke-width: var(--hour-width, 3);
+      }
+      .minute {
+        stroke: var(--minute-color, gray);
+        stroke-width: var(--minute-width, 2);
+      }
+      .second {
+        stroke: var(--second-color, orange);
+        stroke-width: var(--second-width, 1);
+      }
+      .screw {
+        fill: var(--screw, orange);
+      }
+    </style>
+  </defs>
+  <circle cx="0" cy="0" r="45" stroke="black" stroke-width="7.5" class="background" />
+  
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-0" />
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-1" />
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-2" />
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-3" />
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-4" />
+  <rect x="-40" y="0" width="80" height="1" stroke-width="5" class="dot dot-5" />
+  
+  <line x1="0" y1="0" x2="0" y2="-20" class="hour" />
+  <line x1="0" y1="0" x2="0" y2="-30" class="minute" />
+  <line x1="0" y1="0" x2="0" y2="-35" class="second" />
+  <circle cx="0" cy="0" r="4" class="screw" />
+</svg>
