@@ -9,7 +9,7 @@
       <stop offset="60%" stop-color="white" />
       <stop offset="100%" stop-color="white" />
     </linearGradient>
-    <path d="m0 0 a5 1.5 0 1 0 0 3 v-1 h-1" id="g" fill="none" />
+    <path d="m0 0 a3 1.5 0 1 0 0 3 v-1 h-1" id="g" fill="none" />
     <path d="m0 0 a1.5 2 0 1 0 2 0" id="u" fill="none" />
     <path d="m0 0 h1.5 -0.75 v3.5 h0.75 -1.5" id="i" />
     <path d="m0 0 v3.5 h1.5" id="l" />
@@ -137,7 +137,8 @@
       .letra {
           fill: none;
           stroke: white;
-          stroke-width: 0.1;
+          stroke-width: 0.5;
+          stroke-linecap: round;
         }
         .g {
             stroke-dasharray: var(--g);
@@ -175,11 +176,11 @@
     <path d="M50 13 a10 10 0 1 1 40 30 l-40 53, -40 -53 A10 10 0 0 1 50 13z" class="heart" />
     <g transform="translate(30, 45) scale(2)">
       <use href="#g" x="5" y=".5" class="letra g" />
-      <use href="#u" x="7" y=".5" class="letra u" />
-      <use href="#i" x="10" y=".5" class="letra i" />
-      <use href="#l" x="12" y=".5" class="letra l-1" />
+      <use href="#u" x="6" y=".5" class="letra u" />
+      <use href="#i" x="9" y=".5" class="letra i" />
+      <use href="#l" x="11.5" y=".5" class="letra l-1" />
       <use href="#l" x="14" y=".5" class="letra l-2" />
-      <use href="#e" x="16" y=".5" class="letra e" />
+      <use href="#e" x="16.5" y=".5" class="letra e" />
     </g>
   </g>
 
