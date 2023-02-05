@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 100 100">
+<title>Corazón Bostero</title>
+  <defs>
+    <linearGradient id="franjas" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="">
+      <stop offset="0%" stop-color="white" />
+      <stop offset="40%" stop-color="white" />
+      <stop offset="40%" stop-color="hsl(28, 57%, 22%)" />
+      <stop offset="60%" stop-color="hsl(28, 57%, 22%)" />
+      <stop offset="60%" stop-color="white" />
+      <stop offset="100%" stop-color="white" />
+    </linearGradient>
+    <path d="m0 0 a5 1.5 0 1 0 0 3 v-1 h-1" id="g" fill="none" />
+    <path d="m0 0 a1.5 2 0 1 0 2 0" id="u" fill="none" />
+    <path d="m0 0 h1.5 -0.75 v3.5 h0.75 -1.5" id="i" />
+    <path d="m0 0 v3.5 h1.5" id="l" />
+    <path d="m0 0 h1.5 -1.5 v1.75 h1 -1 v1.75 h1.5" id="e" />
+    <style>
+      :root {
+        --rm-trazo: 290;
+        --time-heart: 2s;
+        --g: 13;
+        --u: 9;
+        --i: 8;
+        --l: 5;
+        --e: 10;
+        --time-guille: 15s 3s;
+      }
+      @keyframes beat {
+        to {
+          transform: scale(1);
+        }
+      }
+      @keyframes heart {
+        99% {
+          fill: none;
+        }
+        100% {
+          fill: url(#franjas);
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes g {
+          0% {
+            stroke-dashoffset: var(--g);
+          }
+          8% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      @keyframes u {
+          0% {
+            stroke-dashoffset: var(--u);
+          }
+          8% {
+            stroke-dashoffset: var(--u);
+          }
+          16% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      @keyframes i {
+          0% {
+            stroke-dashoffset: var(--i);
+          }
+          16% {
+            stroke-dashoffset: var(--i);
+          }
+          24% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      @keyframes l-1 {
+          0% {
+            stroke-dashoffset: var(--l);
+          }
+          24% {
+            stroke-dashoffset: var(--l);
+          }
+          32% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      @keyframes l-2 {
+          0% {
+            stroke-dashoffset: var(--l);
+          }
+          32% {
+            stroke-dashoffset: var(--l);
+          }
+          40% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      @keyframes e {
+          0% {
+            stroke-dashoffset: var(--e);
+          }
+          40% {
+            stroke-dashoffset: var(--e);
+          }
+          48% {
+            stroke-dashoffset: 0;
+          }
+          100% {
+            stroke-dashoffset: 0;
+          }
+      }
+      .scale {
+        transform: scale(.95);
+        transform-origin: center;
+        animation: beat 1.416s calc(var(--time-heart) + .5s) ease-in-out infinite alternate;
+      }
+      .heart {
+        fill: none;
+        stroke: hsl(28 57% 22%);
+        stroke-linecap: round;
+        stroke-width: 5;
+        stroke-dasharray: var(--rm-trazo);
+        stroke-dashoffset: var(--rm-trazo);
+        animation: heart var(--time-heart) forwards;
+      }
+      .letra {
+          fill: none;
+          stroke: white;
+          stroke-width: 0.1;
+        }
+        .g {
+            stroke-dasharray: var(--g);
+            stroke-dashoffset: var(--g);
+            animation: g linear infinite var(--time-guille);
+        }
+        .u {
+            stroke-dasharray: var(--u);
+            stroke-dashoffset: var(--u);
+            animation: u linear infinite var(--time-guille);
+        }
+        .i {
+            stroke-dasharray: var(--i);
+            stroke-dashoffset: var(--i);
+            animation: i linear infinite var(--time-guille);
+        }
+        .l-1 {
+            stroke-dasharray: var(--l);
+            stroke-dashoffset: var(--l);
+            animation: l-1 linear infinite var(--time-guille);
+        }
+        .l-2 {
+            stroke-dasharray: var(--l);
+            stroke-dashoffset: var(--l);
+            animation: l-2 linear infinite var(--time-guille);
+        }
+        .e {
+            stroke-dasharray: var(--e);
+            stroke-dashoffset: var(--e);
+            animation: e linear infinite var(--time-guille);
+        }
+    </style>
+  </defs>
+  <g class="scale">
+    <path d="M50 13 a10 10 0 1 1 40 30 l-40 53, -40 -53 A10 10 0 0 1 50 13z" class="heart" />
+    <g transform="translate(30, 45) scale(2)">
+      <use href="#g" x="5" y=".5" class="letra g" />
+      <use href="#u" x="7" y=".5" class="letra u" />
+      <use href="#i" x="10" y=".5" class="letra i" />
+      <use href="#l" x="12" y=".5" class="letra l-1" />
+      <use href="#l" x="14" y=".5" class="letra l-2" />
+      <use href="#e" x="16" y=".5" class="letra e" />
+    </g>
+  </g>
+
+</svg>
