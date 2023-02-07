@@ -1,25 +1,17 @@
 <svg version="1.1" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
   <title>Reloj</title>
   <defs>
-    <linearGradient id="dot-black">
-      <stop offset="0%" stop-color="black" />
-      <stop offset="1%" stop-color="black" />
+    <linearGradient id="dot">
+      <stop offset="0%" class="clock-dot-color" />
+      <stop offset="1%" class="clock-dot-color" />
       <stop offset="1%" stop-color="transparent" />
       <stop offset="99%" stop-color="transparent" />
-      <stop offset="99%" stop-color="black" />
-      <stop offset="100%" stop-color="black" />
-    </linearGradient>
-    <linearGradient id="dot-white">
-      <stop offset="0%" stop-color="white" />
-      <stop offset="1%" stop-color="white" />
-      <stop offset="1%" stop-color="transparent" />
-      <stop offset="99%" stop-color="transparent" />
-      <stop offset="99%" stop-color="white" />
-      <stop offset="100%" stop-color="white" />
+      <stop offset="99%" class="clock-dot-color" />
+      <stop offset="100%" class="clock-dot-color" />
     </linearGradient>
     <radialGradient id="silver" fx="" fy="" r="">
-      <stop offset="0" stop-color="lightgray" stop-opacity=""/>
-      <stop offset="100%" stop-color="gray" stop-opacity=""/>
+      <stop offset="0" stop-color="lightgray" />
+      <stop offset="100%" stop-color="gray" />
     </radialGradient>
     <style>
       .background {
@@ -27,7 +19,10 @@
       }
 
       .dot {
-        fill: var(--dot, url(#dot-black));
+        fill: var(--dot, url(#dot));
+      }
+      .clock-dot-color {
+        stop-color: var(--dot, black);
       }
       .dot-1 {
         transform: rotate(30deg);

@@ -11,7 +11,7 @@ const clockwise = () => {
   let ms = date.getMilliseconds()
   hour.style.transform = `rotate(${h * 30 + m / 2}deg)`
   minute.style.transform = `rotate(${m * 6}deg)`
-  second.style.transform = `rotate(${(s * 6 + ms * 0.006) - 3}deg)`
+  second.style.transform = `rotate(${s * 6}deg)`
 }
 
 setInterval(clockwise)

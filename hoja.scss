@@ -1,0 +1,49 @@
+$bg: white;
+$font-size: 1em;
+$line-h-color: lightgrey;
+$line-h-1: $font-size * 2;
+$line-h-2: $line-h-1 + .1;
+$line-v-color: lightcoral;
+$line-v-1: 6em;
+$line-v-2: $line-v-1 + .1;
+$line-v-3: $line-v-2 + .3;
+$line-v-4: $line-v-3 + .1;
+$padding-top: $font-size * 5;
+@function px($px) {
+  @return $px / 16 * 1em;
+}
+
+:root {
+  background-color: black;
+  font-size: $font-size;
+}
+
+body {
+  margin: 0 auto;
+  padding: $padding-top - .5em 0 0 $line-v-4;
+  max-width: 800px;
+  min-height: 100vh;
+  //line-height: 2;
+
+  background: {
+    image: linear-gradient(90deg, transparent 0, transparent $line-v-1, $line-v-color $line-v-1, transparent $line-v-2, transparent $line-v-3, $line-v-color $line-v-3, transparent $line-v-4), linear-gradient($bg 0, $bg $padding-top, transparent $font-size * 5), repeating-linear-gradient($bg 0, $bg $line-h-1, $line-h-color $line-h-2);
+  };
+}
+
+p {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 .1em;
+  width: 100%;
+  height: $font-size * 2;
+}
+
+@each $pos in center flex-end {
+  .#{$pos} {
+    justify-content: $pos;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
