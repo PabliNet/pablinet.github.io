@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="orange">
+      <stop stop-color="orangered" offset="0%" />
+      <stop stop-color="gold" offset="100%" />
+    </linearGradient>
+    <linearGradient id="pink">
+      <stop stop-color="deeppink" offset="0%" />
+      <stop stop-color="pink" offset="100%" />
+    </linearGradient>
+    <linearGradient id="violet">
+      <stop stop-color="mediumvioletred" offset="0%" />
+      <stop stop-color="violet" offset="100%" />
+    </linearGradient>
+    <style>
+      @keyframes elena {
+        0% {
+          stroke-dashoffset: var(--stroke-elena);
+        }
+        18% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      @keyframes te {
+        0% {
+          stroke-dashoffset: var(--stroke-te);
+        }
+        18% {
+          stroke-dashoffset: var(--stroke-te);
+        }
+        36% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      @keyframes amo {
+        0% {
+          stroke-dashoffset: var(--stroke-amo);
+        }
+        36% {
+          stroke-dashoffset: var(--stroke-amo);
+        }
+        54% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      :root {
+        --stroke-elena: 343;
+        --stroke-te: 110;
+        --stroke-amo: 208;
+        --time: 15s;
+      }
+
+      .elena, .te, .amo {
+        stroke-width: 1;
+        stroke-linecap: round;
+      }
+
+      .elena {
+        stroke-dasharray: var(--stroke-elena);
+        stroke-dashoffset: var(--stroke-elena);
+
+        animation: elena linear infinite var(--time);
+      }
+
+      .te {
+        stroke-dasharray: var(--stroke-te);
+        stroke-dashoffset: var(--stroke-te);
+
+        animation: te linear infinite var(--time);
+      }
+
+      .amo {
+        stroke-dasharray: var(--stroke-amo);
+        stroke-dashoffset: var(--stroke-amo);
+
+        animation: amo linear infinite var(--time);
+      }
+    </style>
+    
+  </defs>
+
+  <path d="m30 10 h-10 v10 h5 -5 v10 h32 -20 v-20 20 h10 v-10 h5 -5 v-10 h11 v20 -20 l10 20 v-20 20 l5 -20 5 20 -2.5 -10 h-5" fill="none" stroke="url(#orange)" class="elena" />
+
+  <path d="m40 55 v-20 h-10 30 -10 v10 h5 -5 v10 h10" fill="none" stroke="url(#violet)" class="te" />
+
+  <path d="m28 80 l5 -20 5 20 -2.5 -10 h-5 5 l2.5 10 v-20 l 5 10 5 -10 v20 -10 a10 10 0 0 1 20 0 10 10 0 0 1 -20 0" fill="none" stroke="url(#pink)" class="amo" />
+</svg>
