@@ -1,0 +1,47 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+   <defs>
+      <style>
+         g {
+         filter: saturate(0);
+         transform-origin: center;
+   
+         transition: filter linear .5s,
+                     transform linear .1s;
+         }
+         g:hover {
+         filter: saturate(1);
+         cursor: pointer;
+         }
+   
+         g:active {
+         transform: scale(.9);
+         }
+      </style>
+   </defs>
+   <g id="logo-youtube">
+      <path transform="scale(2)" fill="red" d="
+         M14.712 4.633
+         a1.754 1.754 0 00-1.234-1.234
+         
+         C12.382 3.11 8 3.11 8 3.11
+         s-4.382 0-5.478.289
+         
+         c-.6.161-1.072.634-1.234 1.234
+         
+         C1 5.728 1 8 1 8s0 2.283.288 3.367
+         
+         c.162.6.635 1.073 1.234 1.234
+         
+         C3.618 12.89 8 12.89 8 12.89
+         s4.382 0 5.478-.289
+         
+         a1.754 1.754 0 001.234-1.234
+         
+         C15 10.272 15 8 15 8
+         s0-2.272-.288-3.367z
+         "/>
+         <path transform="scale(2)" fill="#ffffff" d="
+         M6.593 10.11l3.644-2.098-3.644-2.11v4.208z
+      "/>
+   </g>
+</svg>

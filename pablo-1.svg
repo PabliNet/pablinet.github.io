@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 200 80" fill="none">
+  <style>
+    :root {
+      --ablo-stroke: 444;
+      --p-palo: 69;
+      --p-globo: 99;
+      --h1-time: 5s;
+    }
+    @keyframes p-palo {
+      0% {
+        stroke-dashoffset: var(--p-palo);
+      }
+      10% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes p-globo {
+      0% {
+        stroke-dashoffset: var(--p-globo);
+      }
+      10% {
+        stroke-dashoffset: var(--p-globo);
+      }
+      25% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes ablo {
+      0% {
+        stroke-dashoffset: var(--ablo-stroke);
+      }
+      25% {
+        stroke-dashoffset: var(--ablo-stroke);
+      }
+      75% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+    .p-palo {
+      stroke-dasharray: var(--p-palo);
+      stroke-dashoffset: var(--p-palo);
+
+      animation: p-palo linear var(--h1-time) infinite;
+    }
+    .p-globo {
+      stroke-dasharray: var(--p-globo);
+      stroke-dashoffset: var(--p-globo);
+
+      animation: p-globo linear var(--h1-time) infinite;
+    }
+    .ablo {
+      stroke-dasharray: var(--ablo-stroke);
+      stroke-dashoffset: var(--ablo-stroke);
+
+      animation: ablo linear var(--h1-time) infinite;
+    }
+
+    .pablo {
+      stroke: var(--svg-stroke, black);
+    }
+  </style>
+  <g class="pablo">
+    <path d="
+      m70 20
+      q10 70 -15 50" class="p-palo" />
+    <path d="
+      m80 40
+      a15 20 0 1 0 -10 5" class="p-globo" />
+    <path d="
+      m95 65
+      a10 10 0 1 0 0 0.001
+      q-1 25 10 0
+      t0 -50
+      t0 30
+      t8 10
+      l10 0
+      q15 -15 5 -35
+      t3 45
+      a10 10 0 1 1 0 0.001
+      q10 10 25 -15" class="ablo" />
+  </g>
+</svg>

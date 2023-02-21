@@ -1,0 +1,84 @@
+<svg version="1.1" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      :root {
+        --time: 60s;
+      }
+
+      @keyframes rotation {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      @keyframes color-1 {
+        0% {
+          fill: red;
+        }
+        16.6666666667% {
+          fill: yellow;
+        }
+        33.3333333333% {
+          fill: lime;
+        }
+        50% {
+          fill: cyan;
+        }
+        66.6666666667% {
+          fill: blue;
+        }
+        83.3333333333% {
+          fill: magenta;
+        }
+        100% {
+          fill: red;
+        }
+      }
+
+      @keyframes color-2 {
+        0% {
+          fill: cyan;
+        }
+        16.6666666667% {
+          fill: blue;
+        }
+        33.3333333333% {
+          fill: magenta;
+        }
+        50% {
+          fill: red;
+        }
+        66.6666666667% {
+          fill: yellow;
+        }
+        83.3333333333% {
+          fill: lime;
+        }
+        100% {
+          fill: cyan;
+        }
+      }
+
+      .yin-y-yang {
+        animation: rotation linear var(--time) infinite;
+      }
+
+      .yin-y-yang .fill-1 {
+        animation: color-1 linear var(--time) infinite;
+      }
+
+      .yin-y-yang .fill-2 {
+        animation: color-2 linear var(--time) infinite;
+      }
+
+    </style>
+  </defs>
+
+  <g class="yin-y-yang">
+    <circle cx="0" cy="0" r="50" class="fill-1" stroke-width="1" />
+    <path d="m0 -50 a25 25 0 1 1 0 50 25 25 0 1 0 0 50 50 50 0 1 0 0 -100" class="fill-2" />
+    <circle cx="0" cy="-25" r="5" class="fill-2" />
+    <circle cx="0" cy="25" r="5" class="fill-1" />
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 100 100">
+<title>Corazón Bostero</title>
+  <defs>
+    <linearGradient id="franjas"
+      x1="0%" y1="0%"
+      x2="0%" y2="100%"
+      spreadMethod="">
+      <stop offset="0%" stop-color="navy" />
+      <stop offset="40%" stop-color="navy" />
+      <stop offset="40%" stop-color="gold" />
+      <stop offset="60%" stop-color="gold" />
+      <stop offset="60%" stop-color="navy" />
+      <stop offset="100%" stop-color="navy" />
+    </linearGradient>
+    <style>
+      :root {
+        --rm-trazo: 290;
+        --time: 2s
+      }
+      @keyframes latidos {
+        to {
+          transform: scale(1.05);
+        }
+      }
+      @keyframes dibujar {
+        99% {
+          fill: none;
+          stroke-dasharray: var(--rm-trazo);
+        }
+        100% {
+          fill: url(#franjas);
+          stroke-dasharray: 0;
+          stroke-dashoffset: 0;
+        }
+      }
+      g {
+        transform-origin: center;
+        animation: latidos 1.416s var(--time) ease-in-out infinite alternate;
+      }
+      path {
+        fill: none;
+        stroke: url(#franjas);
+        stroke-linecap: round;
+        stroke-dasharray: var(--rm-trazo);
+        stroke-dashoffset: var(--rm-trazo);
+        animation: dibujar var(--time) forwards;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="
+      M50 13
+      a10 10 0 1 1 40 30
+      l-40 53, -40 -53
+      A10 10 0 0 1 50 13
+      z" />
+  </g>
+</svg>

@@ -1,0 +1,518 @@
+:root {
+  --clock-width: 100vw;
+  --mark-size: 1em;
+}
+
+@media screen and (orientation: landscape) {
+  :root {
+    --clock-width: 100vh;
+  }
+}
+
+body {
+  display: grid;
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clock {
+  position: relative;
+  margin: auto;
+  width: var(--clock-width);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+  transform-origin: center;
+}
+
+.clock .number {
+  position: absolute;
+  top: 2.5em;
+  left: calc(50% - 2.5em);
+  transform-origin: center calc((var(--clock-width) - 5em) / 2);
+  width: 5em;
+  aspect-ratio: 1;
+}
+
+.clock .number:nth-child(1) {
+  transform: rotate(30deg);
+}
+
+.clock .number:nth-child(1) div {
+  transform: rotate(-30deg);
+}
+
+.clock .number:nth-child(2) {
+  transform: rotate(60deg);
+}
+
+.clock .number:nth-child(2) div {
+  transform: rotate(-60deg);
+}
+
+.clock .number:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.clock .number:nth-child(3) div {
+  transform: rotate(-90deg);
+}
+
+.clock .number:nth-child(4) {
+  transform: rotate(120deg);
+}
+
+.clock .number:nth-child(4) div {
+  transform: rotate(-120deg);
+}
+
+.clock .number:nth-child(5) {
+  transform: rotate(150deg);
+}
+
+.clock .number:nth-child(5) div {
+  transform: rotate(-150deg);
+}
+
+.clock .number:nth-child(6) {
+  transform: rotate(180deg);
+}
+
+.clock .number:nth-child(6) div {
+  transform: rotate(-180deg);
+}
+
+.clock .number:nth-child(7) {
+  transform: rotate(210deg);
+}
+
+.clock .number:nth-child(7) div {
+  transform: rotate(-210deg);
+}
+
+.clock .number:nth-child(8) {
+  transform: rotate(240deg);
+}
+
+.clock .number:nth-child(8) div {
+  transform: rotate(-240deg);
+}
+
+.clock .number:nth-child(9) {
+  transform: rotate(270deg);
+}
+
+.clock .number:nth-child(9) div {
+  transform: rotate(-270deg);
+}
+
+.clock .number:nth-child(10) {
+  transform: rotate(300deg);
+}
+
+.clock .number:nth-child(10) div {
+  transform: rotate(-300deg);
+}
+
+.clock .number:nth-child(11) {
+  transform: rotate(330deg);
+}
+
+.clock .number:nth-child(11) div {
+  transform: rotate(-330deg);
+}
+
+.clock .number:nth-child(12) {
+  transform: rotate(360deg);
+}
+
+.clock .number:nth-child(12) div {
+  transform: rotate(-360deg);
+}
+
+.clock .number div {
+  text-align: center;
+}
+
+.marks {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  width: 1px;
+  height: 99%;
+  background-image: linear-gradient(var(--mark-m, white) 0, var(--mark-m, white) var(--mark-size), transparent var(--mark-size), transparent calc(100% - var(--mark-size)), var(--mark-m, white) calc(100% - var(--mark-size)), var(--mark-m, white) 100%);
+}
+
+.mark-1 {
+  transform: rotate(6deg);
+}
+
+.mark-2 {
+  transform: rotate(12deg);
+}
+
+.mark-3 {
+  transform: rotate(18deg);
+}
+
+.mark-4 {
+  transform: rotate(24deg);
+}
+
+.mark-5 {
+  transform: rotate(30deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-5 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-6 {
+  transform: rotate(36deg);
+}
+
+.mark-7 {
+  transform: rotate(42deg);
+}
+
+.mark-8 {
+  transform: rotate(48deg);
+}
+
+.mark-9 {
+  transform: rotate(54deg);
+}
+
+.mark-10 {
+  transform: rotate(60deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-10 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-11 {
+  transform: rotate(66deg);
+}
+
+.mark-12 {
+  transform: rotate(72deg);
+}
+
+.mark-13 {
+  transform: rotate(78deg);
+}
+
+.mark-14 {
+  transform: rotate(84deg);
+}
+
+.mark-15 {
+  transform: rotate(90deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-15 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-16 {
+  transform: rotate(96deg);
+}
+
+.mark-17 {
+  transform: rotate(102deg);
+}
+
+.mark-18 {
+  transform: rotate(108deg);
+}
+
+.mark-19 {
+  transform: rotate(114deg);
+}
+
+.mark-20 {
+  transform: rotate(120deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-20 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-21 {
+  transform: rotate(126deg);
+}
+
+.mark-22 {
+  transform: rotate(132deg);
+}
+
+.mark-23 {
+  transform: rotate(138deg);
+}
+
+.mark-24 {
+  transform: rotate(144deg);
+}
+
+.mark-25 {
+  transform: rotate(150deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-25 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-26 {
+  transform: rotate(156deg);
+}
+
+.mark-27 {
+  transform: rotate(162deg);
+}
+
+.mark-28 {
+  transform: rotate(168deg);
+}
+
+.mark-29 {
+  transform: rotate(174deg);
+}
+
+.mark-30 {
+  transform: rotate(180deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-30 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-31 {
+  transform: rotate(186deg);
+}
+
+.mark-32 {
+  transform: rotate(192deg);
+}
+
+.mark-33 {
+  transform: rotate(198deg);
+}
+
+.mark-34 {
+  transform: rotate(204deg);
+}
+
+.mark-35 {
+  transform: rotate(210deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-35 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-36 {
+  transform: rotate(216deg);
+}
+
+.mark-37 {
+  transform: rotate(222deg);
+}
+
+.mark-38 {
+  transform: rotate(228deg);
+}
+
+.mark-39 {
+  transform: rotate(234deg);
+}
+
+.mark-40 {
+  transform: rotate(240deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-40 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-41 {
+  transform: rotate(246deg);
+}
+
+.mark-42 {
+  transform: rotate(252deg);
+}
+
+.mark-43 {
+  transform: rotate(258deg);
+}
+
+.mark-44 {
+  transform: rotate(264deg);
+}
+
+.mark-45 {
+  transform: rotate(270deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-45 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-46 {
+  transform: rotate(276deg);
+}
+
+.mark-47 {
+  transform: rotate(282deg);
+}
+
+.mark-48 {
+  transform: rotate(288deg);
+}
+
+.mark-49 {
+  transform: rotate(294deg);
+}
+
+.mark-50 {
+  transform: rotate(300deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-50 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-51 {
+  transform: rotate(306deg);
+}
+
+.mark-52 {
+  transform: rotate(312deg);
+}
+
+.mark-53 {
+  transform: rotate(318deg);
+}
+
+.mark-54 {
+  transform: rotate(324deg);
+}
+
+.mark-55 {
+  transform: rotate(330deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-55 {
+    --mark-size: 1.5em;
+  }
+}
+
+.mark-56 {
+  transform: rotate(336deg);
+}
+
+.mark-57 {
+  transform: rotate(342deg);
+}
+
+.mark-58 {
+  transform: rotate(348deg);
+}
+
+.mark-59 {
+  transform: rotate(354deg);
+}
+
+.mark-60 {
+  transform: rotate(360deg);
+  --mark-size: 3vw;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-60 {
+    --mark-size: 1.5em;
+  }
+}
+
+.hour, .minute, .second, .screw {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: 2;
+  height: 45%;
+  transform-origin: bottom;
+}
+
+.hour {
+  left: calc(50% - 0.75em);
+  width: 1.5em;
+  height: 30%;
+  border-radius: 1.5em;
+  background-color: white;
+}
+
+.minute {
+  left: calc(50% - 0.5em);
+  width: 1em;
+  height: 40%;
+  border-radius: 1em;
+  background-color: gray;
+}
+
+.second {
+  left: calc(50% - 0.5vh);
+  width: 1vh;
+  height: 48%;
+  border-radius: 1vh;
+  background-color: orange;
+}
+
+.screw {
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  width: 5%;
+  height: 5%;
+  background-color: orange;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

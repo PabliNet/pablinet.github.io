@@ -1,0 +1,132 @@
+$number-width: 5em;
+$pointer: white gray orange;
+
+:root {
+  --clock-width: 100vw;
+  --mark-size: 1em;
+  @media screen and (orientation:landscape) {
+    --clock-width: 100vh;
+  }
+}
+
+body {
+  display: grid;
+  margin: 0;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clock {
+  position: relative;
+  margin: auto;
+  width: var(--clock-width);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  background-color: hsl(0, 0, 5);
+
+  transform-origin: center;
+
+  .number {
+    position: absolute;
+    top: $number-width / 2;
+    left: calc(50% - #{$number-width / 2});
+    transform-origin: center calc((#{var(--clock-width)} - #{$number-width}) / 2);
+    width: $number-width;
+    aspect-ratio: 1;
+
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        transform: rotate($i * 30deg);
+
+        div {
+          transform: rotate($i * -30deg);
+        }
+      }
+    }
+
+    div {
+      text-align: center;
+    }
+  }
+}
+
+.marks {
+  position: absolute;
+  left: 50%; z-index: 1;
+  width: 1px;
+  height: 99%;
+  background-image: linear-gradient(
+    var(--mark-m, white) 0,
+    var(--mark-m, white) var(--mark-size),
+    transparent var(--mark-size),
+    transparent calc(100% - var(--mark-size)),
+    var(--mark-m, white) calc(100% - var(--mark-size)),
+    var(--mark-m, white) 100%
+  );
+  //transform: translate3d(-50%, -50%, 0);
+}
+
+@for $i from 1 through 60 {
+  .mark-#{$i} {
+    transform: rotate($i * 6deg);
+
+    @if $i * 6 % 30 == 0 {
+      --mark-size: 3vw;
+      @media screen and (orientation:landscape) {
+        --mark-size: 1.5em;
+      }
+    }
+  }
+}
+
+.hour, .minute, .second, .screw {
+  position: absolute;
+  bottom: 50%; left: 50%; z-index: 2;
+  height: 45%;
+  transform-origin: bottom;
+}
+
+.hour {
+  $pointer-width: 1.5em;
+  left: calc(50% - #{$pointer-width / 2});
+  width: $pointer-width;
+  height: 30%;
+  border-radius: $pointer-width;
+  background-color: nth($pointer, 1);
+}
+
+.minute {
+  $pointer-width: 1em;
+  left: calc(50% - #{$pointer-width / 2});
+  width: $pointer-width;
+  height: 40%;
+  border-radius: $pointer-width;
+  background-color: nth($pointer, 2);
+}
+
+.second {
+  $pointer-width: 1vh;
+  left: calc(50% - #{$pointer-width / 2});
+  width: $pointer-width;
+  height: 48%;
+  border-radius: $pointer-width;
+  background-color: nth($pointer, 3);
+}
+
+.screw {
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  width: 5%;
+  height: 5%;
+  background-color: nth($pointer, 3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%)
+}

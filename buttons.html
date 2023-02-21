@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones</title>
+  <link rel="stylesheet" href="/css/buttons.css">
+</head>
+<body>
+  <button class="close-open">Registrate</button>
+  <button class="close-open" disabled>Registrate</button>
+  <button class="round">Registrate</button>
+  <button class="round" disabled>Registrate</button>
+  <input type="checkbox" id="off-on" class="off-on-check" style="display: none;">
+  <label for="off-on" class="off-on"></label>
+  <ul class="check">
+    <li>Lenguajes de programación</li>
+    <li><input type="checkbox" name="lenguajes" id="html"><label for="html">HTML</label></li>
+    <li><input type="checkbox" name="lenguajes" id="css"><label for="css">CSS</label></li>
+    <li><input type="checkbox" name="lenguajes" id="js" checked><label for="js">JavaScript</label></li>
+    <li><input type="checkbox" name="lenguajes" id="sass" checked><label for="sass">SASS</label></li>
+    <li><input type="checkbox" name="lenguajes" id="ts" checked><label for="ts">TypeScript</label></li>
+  </ul>
+  <ul class="radio">
+    <li>Selecciones su género</li>
+    <li><input type="radio" name="genero" id="mujer" checked><label for="mujer">Mujer</label></li>
+    <li><input type="radio" name="genero" id="hombre"><label for="hombre">Hombre</label></li>
+    <li><input type="radio" name="genero" id="no-binario"><label for="no-binario">No binario</label></li>
+  </ul>
+  <div class="circle-open">Ingresa</div>
+  <a href="" class="svg-rect">Hola mundo
+    <svg>
+      <rect />
+    </svg>
+  </a>
+  <a href="" class="border-animated">Test</a>
+  <a href="" class="btn-oblique">Test</a>
+
+  <script>
+    const btnBorderSvg = document.querySelector('.svg-rect'),
+      borderSvgRect = btnBorderSvg.querySelector('rect'),
+      perimeter = btnBorderSvg.offsetWidth * 2 + btnBorderSvg.offsetWidth * 2
+    borderSvgRect.style.setProperty('--perimeter', perimeter)
+  </script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@function px($size, $px:16) {
+  @return $size / $px * 1em;
+}
+
+@function transition($time, $easing, $names...) {
+  $aux: #{nth($names, 1) $time $easing} ;
+  @each $name in $names {
+      @if index($names, $name) > 1 {
+          $aux: append($aux, $name $time $easing, comma)
+      }
+  }
+  @return $aux;
+}
+
+@function hsl-custom ($color, $list) {
+  @if type-of($list) and length($list) == 2 and index(h s l, nth($list, 1)) {
+    @if nth($list, 1) == h {
+      @return adjust-hue($color, nth($list, 2));
+    } @else if nth($list, 1) == s {
+      @return hsl(hue($color), saturation($color) + nth($list, 2), lightness($color));
+    } @else {
+      @return hsl(hue($color), saturation($color), lightness($color) + nth($list, 2));
+    }
+  } @else {
+    @error Es h, s o l y un número;
+  }
+}
+
+@function text-bg($bg, $lm:black, $dm:white, $_change:true) {
+  @if type-of($bg) == color and  type-of($bg) == color and  type-of($bg) == color {
+    @if (lightness($bg) > 60% or (hue($bg) > 40 and hue($bg) < 190 and lightness($bg) > 49%)) and $bg != violet {
+      @if $_change {
+        @return $lm;
+      } @else {
+        @return $dm;
+      }
+    } @else {
+      @if $_change {
+        @return $dm;
+      } @else {
+        @return $lm;
+      }
+    }
+  } @else {
+      @return No es color;
+  }
+}
+
+@mixin close-open ($font-size, $y, $bg, $text, $text-hover, $border) {
+  $y: px($y, $font-size);
+  display: inline-block;
+  padding: 0 px(8);
+  border: {
+    style: none;
+    color: none;
+    radius: 5px;
+  }
+  background: $bg;
+  color: $text;
+  font: {
+    weight: bold;
+    size: $font-size;
+  }
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  line-height: 2;
+  transition: transition(.5s, linear, color, box-shadow, text-shadow);
+  @content;
+  &:enabled {
+    cursor: pointer;
+    box-shadow: inset 0 $y $border, inset 0 (-$y) $border;
+
+    &:hover {
+      color: $text-hover;
+      box-shadow: inset 0 ($font-size / 2 + 1) $border, inset 0 (-$font-size / 2 - 1) $border;
+    }
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+
+  &:disabled {
+    filter: saturate(.3) opacity(.5);
+  }
+}
+
+@mixin round ($font-size, $bg, $hue:-20) {
+  $hue: $hue * 1deg;
+  display: inline-block;
+  padding: 0 px(8);
+  border: {
+    style: none;
+    color: none;
+    radius: $font-size;
+  }
+  background: {
+    image: repeating-linear-gradient(adjust-hue($bg, $hue), $bg, adjust-hue($bg, $hue));
+    size: 100% 200%;
+  }
+  color: text-bg($bg);
+  font: {
+    weight: bold;
+    size: $font-size;
+  }
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  line-height: 2;
+  transition: transition(.5s, linear, background-position);
+
+  &:enabled {
+    cursor: pointer;
+    &:hover {
+      background-position: 0% 100%;
+    }
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+
+  &:disabled {
+    filter: saturate(.5) opacity(.5);
+  }
+}
+
+@mixin off-on ($size, $bg, $switch) {
+  display: inline-block;
+  position: relative;
+  width: $size;
+  height: $size / 2;
+  border-radius: $size;
+  background-color: $bg;
+
+  &-check:checked + label::before {
+    background-color: $switch;
+    transform: translate(100%);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: $size / 2;
+    height: 100%;
+    border-radius: 50%;
+    background-color: desaturate($switch, 100%);
+
+    cursor: pointer;
+    transition: transition(.3s, linear, background-color, transform);
+  }
+}
+
+@mixin check($type, $text, $check:unset, $change:true) {
+  padding-left: 0;
+  list-style: none;
+
+  > :first-child {
+    font-weight: bold;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  input[type=#{$type}] {
+    appearance: none;
+
+    &::before {
+      @if $type == checkbox {
+        content: "\2713";
+        color: transparent;
+      } @else if $type == radio {
+        content: "";
+      }
+      display: inline-block;
+      padding: 0;
+      width: 1em;
+      height: 1em;
+      line-height: 0.7;
+      font: {
+        family: monospace;
+        weight: bold;
+        size: 20px;
+      }
+      border: {
+        style: solid;
+        size: 1px;
+        color: $text;
+      };
+      box-sizing: border-box;
+      @if $type == radio {
+        border-radius: 50%;
+      }
+      cursor: pointer;
+    }
+
+    &:checked {
+
+      + label {
+        color: $check;
+      }
+
+      &::before {
+        @if $type == checkbox {
+          color: text-bg($check, $_change:$change);
+          background-color: $check;
+        }
+        @else if $type == radio {
+          color: $check;
+          background-image: radial-gradient($check 0, $check 50%, text-bg($check, $_change:$change) 50%);
+        }
+        border: {
+          style: solid;
+          size: 1px;
+          color: $check;
+        }
+      }
+    }
+  }
+
+  li {
+    &:hover {
+      input::before {
+        @if $type == checkbox {
+          background-color: rgba($check, .5);
+          color: text-bg($check, $_change:$change);
+        } @else if $type == radio {
+          border-radius: 50%;
+          background-image: radial-gradient(rgba($check, .5) 0, rgba($check, .5) 50%, text-bg($check, $_change:$change) 50%);
+        }
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+@mixin circle-open($font-size, $bg, $bg-hover, $bg-hover-end, $time:.3s, $disabled:no-disabled, $change:true) {
+  @if type-of($bg-hover-end) == color or type-of($bg-hover-end) == list {
+    @if type-of($bg-hover-end) == list {
+      @if length($bg-hover-end) == 2 {
+        $bg-hover-end: hsl-custom($bg-hover, $bg-hover-end);
+      }
+    }
+  }
+  display: inline-block;
+  position: relative;
+  padding: 0 px(16);
+  border: {
+    style: none;
+    color: none;
+    radius: $font-size;
+  }
+  background-color: transparent;
+  color: text-bg($bg, $_change:$change);
+  font: {
+    weight: bold;
+    size: $font-size;
+  }
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  line-height: 2;
+  overflow: hidden;
+
+  transition: transition(.5s, linear, background-color);
+
+  &::before, &::after {
+    position: absolute;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    top: 50%; left: 50%; z-index: -1;
+    width: 0;
+    aspect-ratio: 1;
+    background-color: $bg-hover;
+    border-radius: 50%;
+    pointer-events: none;
+
+    transform: translate3d(-50%, -50%, 0);
+    transition: transition(.3s, linear, background-color, width);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -2;
+    background-color: $bg;
+  }
+
+  @if $disabled == disabled {
+    background-color: desaturate($bg, 100%);
+    color: rgba(text-bg($bg, $change), .1);
+  } @else if $disabled == no-disabled {
+    &:hover {
+      cursor: pointer;
+
+      &::before {
+        width: 100%;
+        background-color: $bg-hover-end;
+      }
+
+      &::after {
+        background-color: adjust-hue($bg, -10deg);
+      }
+    }
+
+    &:active {
+      transform: scale(.9);
+
+      &::before {
+        width: 0;
+      }
+    }
+  } @else {
+    @error "Es disabled o no-disabled.";
+  }
+}
+
+@mixin svg-rect($color, $width:auto, $height:auto) {
+  $height: $height * 1.5;
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+  //width: var(--width, $width);
+  height: var(--height, $height);
+  line-height: var(--height, $height);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font: {
+    weight: bold;
+    size: 32px;
+  }
+  text: {
+    align: center;
+    decoration: none;
+  }
+  color: $color;
+
+  svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  rect {
+    $perimeter: $width * 2 + $height * 2;
+    x: 0;
+    y: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: $color;
+    stroke-dasharray: var(--perimeter, #{$perimeter});
+    stroke-dashoffset: var(--perimeter, #{$perimeter});
+    stroke-width: 10;
+
+    transition: stroke-dashoffset linear .5s;
+  }
+
+  rect:hover {
+    stroke-dashoffset: 0;
+  }
+}
+
+@mixin btn-oblique($text:var(--text, currentColor), $text-hover:var(--text-hover, currentColor), $bg:var(--bg, lightgray), $bg-hover:var(--bg-hover, yellow)) {
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+  background-color: transparent;
+  color: $text;
+  line-height: 1.8;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: color .3s linear;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; z-index: -1;
+    width: 100%; height: 100%;
+  }
+
+  &::before {
+    padding: 0 1em;
+    background-color: $bg-hover;
+    transform: translate3d(calc(100% - 1em), 0, 0) skew(-30deg);
+
+    transition: transform .3s linear;
+  }
+
+  &::after {
+    z-index: -2;
+    background-color: $bg;
+  }
+
+  &:hover {
+    color: $text-hover;
+
+    &::before {
+      transform: translate3d(-1em, 0, 0) skew(-30deg);
+    }
+  }
+}
+
+.close-open {
+  @include close-open(px(16), px(5), dodgerblue, lightgray, white, blue);
+}
+
+.round {
+  @include round(px(16), orange);
+}
+
+.off-on {
+  @include off-on(50px, lightgray, yellow);
+}
+
+.check {
+  @include check(checkbox, black, mediumorchid);
+}
+
+.radio {
+  @include check(radio, black, dodgerblue);
+}
+
+.circle-open {
+  @include circle-open(px(32), gold, blue, h -50, $change:false);
+}
+
+.svg-rect {
+  @include svg-rect(blue, 100px, 50px);
+}
+
+.btn-oblique {
+  @include btn-oblique();
+  --text: yellow;
+  --text-hover: orange;
+  --bg: blue;
+  --bg-hover: black;
+  font-size: 2em;
+}

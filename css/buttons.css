@@ -1,0 +1,372 @@
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.close-open {
+  display: inline-block;
+  padding: 0 0.5em;
+  border-style: none;
+  border-color: none;
+  border-radius: 5px;
+  background: dodgerblue;
+  color: lightgray;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2;
+  transition: color 0.5s linear, box-shadow 0.5s linear, text-shadow 0.5s linear;
+}
+
+.close-open:enabled {
+  cursor: pointer;
+  box-shadow: inset 0 0.3125em blue, inset 0 -0.3125em blue;
+}
+
+.close-open:enabled:hover {
+  color: white;
+  box-shadow: inset 0 1.5em blue, inset 0 -1.5em blue;
+}
+
+.close-open:enabled:active {
+  transform: scale(0.9);
+}
+
+.close-open:disabled {
+  filter: saturate(0.3) opacity(0.5);
+}
+
+.round {
+  display: inline-block;
+  padding: 0 0.5em;
+  border-style: none;
+  border-color: none;
+  border-radius: 1em;
+  background-image: repeating-linear-gradient(#ff5000, orange, #ff5000);
+  background-size: 100% 200%;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2;
+  transition: background-position 0.5s linear;
+}
+
+.round:enabled {
+  cursor: pointer;
+}
+
+.round:enabled:hover {
+  background-position: 0% 100%;
+}
+
+.round:enabled:active {
+  transform: scale(0.9);
+}
+
+.round:disabled {
+  filter: saturate(0.5) opacity(0.5);
+}
+
+.off-on {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: lightgray;
+}
+
+.off-on-check:checked + label::before {
+  background-color: yellow;
+  transform: translate(100%);
+}
+
+.off-on::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.3s linear, transform 0.3s linear;
+}
+
+.check {
+  padding-left: 0;
+  list-style: none;
+}
+
+.check > :first-child {
+  font-weight: bold;
+}
+
+.check > :first-child::after {
+  content: ":";
+}
+
+.check input[type=checkbox] {
+  appearance: none;
+}
+
+.check input[type=checkbox]::before {
+  content: "\2713";
+  color: transparent;
+  display: inline-block;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 0.7;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  border-style: solid;
+  border-size: 1px;
+  border-color: black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.check input[type=checkbox]:checked + label {
+  color: mediumorchid;
+}
+
+.check input[type=checkbox]:checked::before {
+  color: white;
+  background-color: mediumorchid;
+  border-style: solid;
+  border-size: 1px;
+  border-color: mediumorchid;
+}
+
+.check li:hover input::before {
+  background-color: rgba(186, 85, 211, 0.5);
+  color: white;
+}
+
+.check label {
+  cursor: pointer;
+}
+
+.radio {
+  padding-left: 0;
+  list-style: none;
+}
+
+.radio > :first-child {
+  font-weight: bold;
+}
+
+.radio > :first-child::after {
+  content: ":";
+}
+
+.radio input[type=radio] {
+  appearance: none;
+}
+
+.radio input[type=radio]::before {
+  content: "";
+  display: inline-block;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 0.7;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  border-style: solid;
+  border-size: 1px;
+  border-color: black;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio input[type=radio]:checked + label {
+  color: dodgerblue;
+}
+
+.radio input[type=radio]:checked::before {
+  color: dodgerblue;
+  background-image: radial-gradient(dodgerblue 0, dodgerblue 50%, white 50%);
+  border-style: solid;
+  border-size: 1px;
+  border-color: dodgerblue;
+}
+
+.radio li:hover input::before {
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(30, 144, 255, 0.5) 0, rgba(30, 144, 255, 0.5) 50%, white 50%);
+}
+
+.radio label {
+  cursor: pointer;
+}
+
+.circle-open {
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+  border-style: none;
+  border-color: none;
+  border-radius: 2em;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 2;
+  overflow: hidden;
+  transition: background-color 0.5s linear;
+}
+
+.circle-open::before, .circle-open::after {
+  position: absolute;
+}
+
+.circle-open::before {
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 0;
+  aspect-ratio: 1;
+  background-color: blue;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  transition: background-color 0.3s linear, width 0.3s linear;
+}
+
+.circle-open::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: gold;
+}
+
+.circle-open:hover {
+  cursor: pointer;
+}
+
+.circle-open:hover::before {
+  width: 100%;
+  background-color: #00d5ff;
+}
+
+.circle-open:hover::after {
+  background-color: #ffad00;
+}
+
+.circle-open:active {
+  transform: scale(0.9);
+}
+
+.circle-open:active::before {
+  width: 0;
+}
+
+.svg-rect {
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+  height: var(--height, 75px);
+  line-height: var(--height, 75px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: blue;
+}
+
+.svg-rect svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-rect rect {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: blue;
+  stroke-dasharray: var(--perimeter, 350px);
+  stroke-dashoffset: var(--perimeter, 350px);
+  stroke-width: 10;
+  transition: stroke-dashoffset linear .5s;
+}
+
+.svg-rect rect:hover {
+  stroke-dashoffset: 0;
+}
+
+.btn-oblique {
+  display: inline-block;
+  position: relative;
+  padding: 0 1em;
+  background-color: transparent;
+  color: var(--text, currentColor);
+  line-height: 1.8;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color .3s linear;
+  --text: yellow;
+  --text-hover: orange;
+  --bg: blue;
+  --bg-hover: black;
+  font-size: 2em;
+}
+
+.btn-oblique::before, .btn-oblique::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-oblique::before {
+  padding: 0 1em;
+  background-color: var(--bg-hover, yellow);
+  transform: translate3d(calc(100% - 1em), 0, 0) skew(-30deg);
+  transition: transform .3s linear;
+}
+
+.btn-oblique::after {
+  z-index: -2;
+  background-color: var(--bg, lightgray);
+}
+
+.btn-oblique:hover {
+  color: var(--text-hover, currentColor);
+}
+
+.btn-oblique:hover::before {
+  transform: translate3d(-1em, 0, 0) skew(-30deg);
+}

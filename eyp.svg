@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" fill="none" stroke="orange">
+  <defs>
+    <style>
+      @keyframes eyp {
+        50% {
+          stroke-dashoffset: 0;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      :root {
+        --svg-stroke-eyp: 402;
+      }
+      .eyp {
+        stroke-dasharray: var(--svg-stroke-eyp);
+        stroke-dashoffset: var(--svg-stroke-eyp);
+        stroke-linecap: round;
+
+        animation: eyp linear 5s infinite;
+      }
+    </style>
+  </defs>
+  <path d="m10 10 q10 5 20 0t2 -5 t-15 5 c-20 15 -10 20 5 20 5 0 5 -2 0 -2 s -30 10 5 15 a2 2 0 0 1 2 2 c0 10 -3 10 15 0 s0 30 -5 30 -10 -20 15 -22 a2 2 0 0 1 2 1.5 q10 15 5 30 t-4 -15 15 -30 a15 10 0 1 1 -5 35" class="eyp" />
+</svg>
