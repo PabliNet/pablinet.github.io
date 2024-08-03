@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas de multiplicar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: lightgray;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .table:nth-of-type(-n+2) {
+      display: none;
+    }
+
+    .table:nth-of-type(n+3) {
+      border: double 3px white;
+    }
+
+    .table div {
+      padding: 5px;
+    }
+
+    .table div:first-of-type {
+      font-weight: bold;
+      border-bottom: solid 3px white;
+    }
+
+    .x {
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    .x:not(:last-of-type) {
+      border-bottom: solid 1px white;
+    }
+
+    .zero::before {
+      content: "0";
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const n = x => x < 10 ? `<span class="zero">${x}</span>` : `${x}`
+    const tables = tablesElements(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'], layout())
+    optionTables()
+    parseTables(2)
+    addEventListener('change', e => {
+      if (e.target.id == 'number')
+        parseTables(parseInt(document.getElementById('number').value))
+    })
+
+    function layout () {
+      const h1 = document.createElement('H1')
+      const p = document.createElement('P')
+      const div = document.createElement('DIV')
+      div.id = 'container'
+      div.classList.add(div.id)
+      h1.textContent = 'IDEA PARA TABLAS DE MULTIPLICAR'
+      p.innerHTML = 'Mi idea es enseñar de forma conjuntas las tables pero por partes. O sea, en este ejemplo se enseña la tabla del dos y a su vez se va rellenando las demás tablas solo en 2. Esto hace que el alumno pueda razonar la tabla y no aprendérsela de memoria. Includo puede empezar a multiplicar con tablas que no sepa y, si sabe hasta la tabla del 5, tranquilamente puede hacer la siguiente cuenta: 254 × 8'
+      const array = [h1, p, div]
+      array.forEach(e => document.body.appendChild(e))
+      return div
+    }
+
+    function parseTables (x) {
+      //*
+      for (i in tables) {
+        if (i > 1) {
+          for (j = 0; j < 11; j++) {
+            if (i <= x || i > x && j <= x)
+              document.getElementById(`eq-${j}x${i}`).innerHTML = n(j * i)
+          }
+        }
+      }
+      //*/
+    }
+
+    function optionTables() {
+      const p = document.createElement('P')
+      const select = document.createElement('SELECT')
+      select.id = 'number'
+      select.classList.add('number')
+      for (i=2; i < 11; i++) {
+        const option = document.createElement('option')
+        option.textContent = `tabla del ${i}`
+        option.value = i
+        select.appendChild(option)
+      }
+      p.appendChild(select)
+      document.getElementById('container').insertAdjacentElement('beforebegin', p)
+      select.insertAdjacentText('beforebegin', 'Aprendrió hasta la ')
+    }
+
+
+    function tablesElements (tables, parent) {
+      const array = []
+      c = 0
+      tables.map(e => {
+        const div = document.createElement('DIV')
+        div.id = e
+        div.classList.add('table')
+        array.push(div)
+        //*
+        for (i = 0; i < 11; i++) {
+          if (c > 1) {
+            if (i == 0)
+              div.insertAdjacentHTML("beforeend", `<div>TABLA DEL ${c}</div>`)
+            div.insertAdjacentHTML("beforeend", `<div class="x">${n(i)} × ${c} = <span id="eq-${i}x${c}"></span></div>`)
+          }
+        }
+        //*/
+        parent.appendChild(div)
+        c++
+    })
+      return array
+    }
+  </script>
+</body>
+</html>
