@@ -1,0 +1,12 @@
+Origin: bool-quetion
+Label: bool-quetion
+Suite: stable
+Version: 0.1.6.3
+Codename: stable
+Date: Wed, 23 Apr 2025 20:00:00 UTC
+Architectures: all
+Components: main
+Description: Repositorio APT para bool_quetion
+MD5Sum:
+SHA1:
+SHA256:
