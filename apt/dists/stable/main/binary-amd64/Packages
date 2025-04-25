@@ -1,16 +1,17 @@
 Package: bool-quetion
-Version: 0.1.6.3-1
 Architecture: all
+Version: 0.1.6.3-1
+Priority: optional
+Section: python
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
-Installed-Size: 24
+Installed-Size: 23
 Depends: python3:any
 Filename: pool/main/b/bool-quetion_0.1.6.3-1_all.deb
-Size: 4608
-MD5sum: d94b25e3305a863bf24b8918739a72e9
-SHA1: 4c644a22fdd7214fc306fa7a76ccbe75d11ad617
-SHA256: cd25a7620647650cbd921ea1c7ab69db26b3fe8e705857f6055d26c2bdda87a5
-Section: python
-Priority: optional
+Size: 4496
+MD5sum: 903e96d4cf5481bc49af93c022e8cd38
+SHA1: 6901f5cf5e6e977ec2d5a9ed817c9b6ae655a991
+SHA256: f23c1ee5e4b2d11e055671335552c855f8494f97b18a1277741e2367a2bf997d
+SHA512: de54f81ef3d0f6561fe095da3d91db4844ff239de3c84cc3f728794eb0bfd6a7ab681105ee6fa661a952c23eb381b6de882c4ce776f6814a75e682cd69d96efb
 Homepage: https://github.com/PabliNet/bool_quetion
 Description: Module for asking yes/no or accept/cancel questions.
 

@@ -1,48 +1,44 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Origin: bool-quetion
-Label: bool-quetion
-Suite: stable
-Version: 0.1.6.3
-Codename: stable
-Date: Fri, 25 Apr 2025 02:52:28 UTC
-Architectures: amd64 i386
-Components: main
-Description: Python module for asking yes/no or accept/cancel questions"
+Date: Fri, 25 Apr 2025 16:13:13 +0000
 MD5Sum:
- b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-amd64/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-amd64/Packages.gz
- b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-i386/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-i386/Packages.gz
+ 2a7363896a345c75eace5b71ff5060e9               38 Release
+ 86c61fc4a56548bb4cc90d973ba1413a              675 main/binary-amd64/Packages
+ 84cc1c9afb0f1979fb52f6b8cd685f32              494 main/binary-amd64/Packages.gz
+ 86c61fc4a56548bb4cc90d973ba1413a              675 main/binary-i386/Packages
+ 84e2c0adbe74113dab9c2163ad048b18              494 main/binary-i386/Packages.gz
 SHA1:
- 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-amd64/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-amd64/Packages.gz
- 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-i386/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-i386/Packages.gz
+ 2f7bf352264a2c0de479d16c8d3548f0463c32f1               38 Release
+ b80177705105b5aa0d7e584e9efdb8bdffad4b53              675 main/binary-amd64/Packages
+ 454db91237ba6bd9e97be7747cfe5fb336b2d3f3              494 main/binary-amd64/Packages.gz
+ b80177705105b5aa0d7e584e9efdb8bdffad4b53              675 main/binary-i386/Packages
+ eb956cf514a96ae18bf4e7c6ad81361b2c33a924              494 main/binary-i386/Packages.gz
 SHA256:
- bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-amd64/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-amd64/Packages.gz
- bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-i386/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-i386/Packages.gz
+ fc78783bd2f790337d33f9e61c753c478e57d439e4569af6e33646cc9c1104fe               38 Release
+ a221f24439972fa02eb60f7f2bca175e8becb3ba2716959b7ef8ebbf9b52ded3              675 main/binary-amd64/Packages
+ 815652f0ae1de3e57718ade5b73574f7ae4328f34822ca3edfe92dd0a1510f62              494 main/binary-amd64/Packages.gz
+ a221f24439972fa02eb60f7f2bca175e8becb3ba2716959b7ef8ebbf9b52ded3              675 main/binary-i386/Packages
+ 1efdc41b45823204221ceef6413cc01e0181f35fa1b8d9a40b3ec5a4e1646d1f              494 main/binary-i386/Packages.gz
 SHA512:
- f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-amd64/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-amd64/Packages.gz
- f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-i386/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz
+ 30c5e11bc616baffc186954490f0e5e26bbe5c417f1ab1f3a080e78961be5ea20dc370f53ef3cdf750d4294e1247a6aba76c424b6980263a63c5e47c6e48f040               38 Release
+ baff6f469ee634c80b9e8da934353da9fe203a4c3c067f58d7563283b40240671208e7edd1545360ce284fa44190bac4191e7010c8942a09e0bdd2903ab08ac2              675 main/binary-amd64/Packages
+ 194ae015627721a1eee46ab70026360aa01c35ed200394ba214418d8b8bc8dd893673600b119456ccc262beb7af56170765707c92840c5895cd81ab8d3d370d5              494 main/binary-amd64/Packages.gz
+ baff6f469ee634c80b9e8da934353da9fe203a4c3c067f58d7563283b40240671208e7edd1545360ce284fa44190bac4191e7010c8942a09e0bdd2903ab08ac2              675 main/binary-i386/Packages
+ 5886daa58f9a68dee84c2e5203fec9de79f4d7b017b485040c655bd71810f36fba01a900d95d8e7e4445f7e204fe7292f5715665c6890e9bd90de72ee8f83026              494 main/binary-i386/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK/EYACgkQRwFN/qVU
-Zb3B3xAAnoZxXo/cT8pZvBl0N0JRfLMrITM9IYJDOZD6uBnt7wzo+1X62fcCp3/I
-yF59pNCoPXw2n6Xl5jm/XT7betl6IuB6HmV6PfDewse9TvO6NFg7roxYeq/y/HPd
-36kAozJBmSDW9HtsGuw5wDzIh+XYdeEz/MOmLOMaqTy8m1rUYhk93HC5wXFpbRk7
-1PlOEeijhTHpGV7jM0cCCJFlnNCrD/lnktyHjHwCdMhxjZ3dntKOcSbJgx20PXfS
-DUne5j0QvJm81txehph5GXsDDnATqLUn07J2rr4JS57x20P/0ECugJH6k2KygP5X
-y+ZshG6jQnfgaFNpp8zWvh1Lm6zUZ6ZETG12JX0o73CxNAqJU1Lk6GKLdQyrn9gL
-TJXpj/9gHEGd0a7jeZRYoyqxYNVzRMjYEhn7nIEeAbd8+EadoocYY+3hqZSWlgDT
-SkuiAAKPMkyiwmiOcxuBaD/wQ2GcLZZqnK9QEb6CpK5uddk69eo9LY4jCoF09gcw
-rZojhCA4bn6z2/ZhCak8vsqia32eNYQI46aQOMLpMd0X25idXXGb2ZY2iZnw4sgt
-C0Q3gjS2LZVeKDwy9FdhWpcWugGEoJ7TTkvVnZgKEfnfDhrWchlhSumO9opmTIBl
-+/0UJINKGTerWLOKjhSPfomkJgF69SGLvACNWC3KR3NnalJFPxE=
-=LGa2
+iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgLtQQACgkQRwFN/qVU
+Zb3Yjg//T73de6OMmlZ0xSxCTlEpL/CmYYxvLwTPoYFhOxquekPaTdE1FeFHQNV+
+Mc3QBYc5PXYSeDhgmSLeoLppaQHHPDcj2RhEW+kSlBUG+34CVOG1mf4qUo4CxusC
+f3rsbHi7Ys9z7MMr2eUfBh0nrfWZP22riKBUiFgM4lPyf2l0oylYtYathzp2INLE
+8LDlNxkocjeOeKb+zGxGWlIz7sjZZe29BZTQqZf1p+PTAh/nL4reudWxINE07Ftn
+UeTGzh+nalvcBK5izG7g2AAIy/TTBzG4eA5bxJzTesdKPDqEd4hcPo4+zgW1gTM3
+U7vR/BhxoKfTzW5y6C9bdTt49zuuz0U06BCDYkugAWvpdF0Pubr0fKUNWEUgohJb
+jHv9wxErKrT7IOIw8MJU6xw4VqwJZ8xR3llznAeNjWLnQT1rVYqxr+ifeF4/OG/3
+WRm1JQZyUt+S1j2LG7n2TW3l24ysGzeXTr8cW+iFTgeDd/z2I26CXQPyOz0joOF8
+j0zNEPrGUAX55Rn4w7nh96+CbDhOFW4wRxdVLCQ92TCv1jrpR36C3LP1i+AWNVQd
+fFhvpdyQ5kM4a/kcI7IhQsqrU3a4uqbHTJkO+1y8gSFqJGaoyJphqokj0Apj9xgv
+kcYvGLFWiAwqWdfo0CIm30/rExBlv1bQ0EH/Ht8RA//Pdc5zg8o=
+=uhm6
 -----END PGP SIGNATURE-----
