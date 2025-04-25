@@ -1,7 +1,15 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Date: Fri, 25 Apr 2025 16:13:13 +0000
+Origin: bool-quetion
+Label: bool-quetion
+Suite: stable
+Version: 0.1.6.3
+Codename: stable
+Date: Fri, 25 Apr 2025 16:13:13 UTC
+Architectures: amd64 i386
+Components: main
+Description: Repositorio APT para bool_quetion
 MD5Sum:
  2a7363896a345c75eace5b71ff5060e9               38 Release
  86c61fc4a56548bb4cc90d973ba1413a              675 main/binary-amd64/Packages
@@ -28,17 +36,17 @@ SHA512:
  5886daa58f9a68dee84c2e5203fec9de79f4d7b017b485040c655bd71810f36fba01a900d95d8e7e4445f7e204fe7292f5715665c6890e9bd90de72ee8f83026              494 main/binary-i386/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgLtQQACgkQRwFN/qVU
-Zb3Yjg//T73de6OMmlZ0xSxCTlEpL/CmYYxvLwTPoYFhOxquekPaTdE1FeFHQNV+
-Mc3QBYc5PXYSeDhgmSLeoLppaQHHPDcj2RhEW+kSlBUG+34CVOG1mf4qUo4CxusC
-f3rsbHi7Ys9z7MMr2eUfBh0nrfWZP22riKBUiFgM4lPyf2l0oylYtYathzp2INLE
-8LDlNxkocjeOeKb+zGxGWlIz7sjZZe29BZTQqZf1p+PTAh/nL4reudWxINE07Ftn
-UeTGzh+nalvcBK5izG7g2AAIy/TTBzG4eA5bxJzTesdKPDqEd4hcPo4+zgW1gTM3
-U7vR/BhxoKfTzW5y6C9bdTt49zuuz0U06BCDYkugAWvpdF0Pubr0fKUNWEUgohJb
-jHv9wxErKrT7IOIw8MJU6xw4VqwJZ8xR3llznAeNjWLnQT1rVYqxr+ifeF4/OG/3
-WRm1JQZyUt+S1j2LG7n2TW3l24ysGzeXTr8cW+iFTgeDd/z2I26CXQPyOz0joOF8
-j0zNEPrGUAX55Rn4w7nh96+CbDhOFW4wRxdVLCQ92TCv1jrpR36C3LP1i+AWNVQd
-fFhvpdyQ5kM4a/kcI7IhQsqrU3a4uqbHTJkO+1y8gSFqJGaoyJphqokj0Apj9xgv
-kcYvGLFWiAwqWdfo0CIm30/rExBlv1bQ0EH/Ht8RA//Pdc5zg8o=
-=uhm6
+iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgLuMsACgkQRwFN/qVU
+Zb3iRA//YAsamP3HeKdV5rXyJSpKpfEp1SqXaAQ/YGgHMlDembOWE+dig5blQjle
+21PWueU/LAZeLOlju+nfg2FNiTFAUGH3nFNTRlu6zdY/fImJoXn+ScRYuxatRo6J
+G7uWbugBLm1AF02wjm7LZs3VgKoAZPi5VX+Y6anFn+WL2WFIbmGH63TV8ZLKbVt9
+UxMBQu4zUU+BAL8T4sRCyIilJCY+SC6iGgxVK6tqT/oow5oWFMXfPae6VMyShhlC
+cPUIZwA7kFau7Q1yF5d9ppUtKGYg2JCL59lyr6XBLc/UgiT4NszWqvlxo/xvGFpO
+8qKSF08cM77RicZlSOlXQEixHVClNwMUHyqCNhJMGRIMYQODQ59q/FTEI4ByC0qv
+3eriI8Ewm1Yb+Z9YHlLn3TPUGC5AZwzUko9sXIKRnNQ0FxM9TI9MXgwa3jD1XvIv
+RUO/D59cSSH6wqg2Y3dgQs8eQylQ9/JlFx54UxTwueNYudXPzotI4rGyV2DzUqYn
+k2FhuofV8IKBpn85PjQJXBcBxt4cn2QuXElGKlGjW0/9dBxdOZR31J13+xx0fMMa
+mOrXtzOHR3e5IboyGPku7LiM5Tm/AAutAu2g64QPnLHyv9888q89r32mqYAl3N0G
+hssODU0/8OyNqz/yqPHY3cGiWretVdsXUQyqPnGkZlhzwrkfxjA=
+=N0Ul
 -----END PGP SIGNATURE-----

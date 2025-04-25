@@ -1,4 +1,12 @@
-Date: Fri, 25 Apr 2025 16:13:13 +0000
+Origin: bool-quetion
+Label: bool-quetion
+Suite: stable
+Version: 0.1.6.3
+Codename: stable
+Date: Fri, 25 Apr 2025 16:13:13 UTC
+Architectures: amd64 i386
+Components: main
+Description: Repositorio APT para bool_quetion
 MD5Sum:
  2a7363896a345c75eace5b71ff5060e9               38 Release
  86c61fc4a56548bb4cc90d973ba1413a              675 main/binary-amd64/Packages
