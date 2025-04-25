@@ -9,21 +9,21 @@ Components: main
 Description: Python module for asking yes/no or accept/cancel questions"
 MD5Sum:
  b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-amd64/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-amd64/Packages.gz
+ 11ee5efaa37f41d7ac6d38ccaa0b68b1              402 main/binary-amd64/Packages.gz
  b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-i386/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-i386/Packages.gz
+ 11ee5efaa37f41d7ac6d38ccaa0b68b1              402 main/binary-i386/Packages.gz
 SHA1:
  1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-amd64/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-amd64/Packages.gz
+ 1ad02009cc5110f797e0fca07ba8c2ee5bc8240e              402 main/binary-amd64/Packages.gz
  1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-i386/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-i386/Packages.gz
+ 1ad02009cc5110f797e0fca07ba8c2ee5bc8240e              402 main/binary-i386/Packages.gz
 SHA256:
  bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-amd64/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-amd64/Packages.gz
+ adcb4e9cdb1afdd8b767b32b81fbcf3f0164cec31b99af16023c10f9ebfec73a              402 main/binary-amd64/Packages.gz
  bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-i386/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-i386/Packages.gz
+ adcb4e9cdb1afdd8b767b32b81fbcf3f0164cec31b99af16023c10f9ebfec73a              402 main/binary-i386/Packages.gz
 SHA512:
  f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-amd64/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-amd64/Packages.gz
+ 0e27a16770935e9434850dd91620f0304a9f13dce2a14c71308e60ca473ae5052e498b1bb28568da4da2835e0059ab0a8f793e1631cc401a19c282b2320ea69b              402 main/binary-amd64/Packages.gz
  f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-i386/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz
+ 0e27a16770935e9434850dd91620f0304a9f13dce2a14c71308e60ca473ae5052e498b1bb28568da4da2835e0059ab0a8f793e1631cc401a19c282b2320ea69b              402 main/binary-i386/Packages.gz
