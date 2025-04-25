@@ -3,19 +3,27 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Thu, 24 Apr 2025 23:24:58 -0300
+Date: Fri, 25 Apr 2025 02:52:28 +0000
 Architectures: amd64 i386
 Components: main
-Description: Repositorio APT para bool_quetion
+Description: Python module for asking yes/no or accept/cancel questions"
 MD5Sum:
- b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-all/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-all/Packages.gz
+ b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-amd64/Packages
+ 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-amd64/Packages.gz
+ b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-i386/Packages
+ 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-i386/Packages.gz
 SHA1:
- 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-all/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-all/Packages.gz
+ 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-amd64/Packages
+ 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-amd64/Packages.gz
+ 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-i386/Packages
+ 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-i386/Packages.gz
 SHA256:
- bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-all/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-all/Packages.gz
+ bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-amd64/Packages
+ cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-amd64/Packages.gz
+ bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-i386/Packages
+ cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-i386/Packages.gz
 SHA512:
- f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-all/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-all/Packages
+ f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-amd64/Packages
+ de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-amd64/Packages.gz
+ f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-i386/Packages
+ de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz

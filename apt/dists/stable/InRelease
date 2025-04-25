@@ -6,35 +6,43 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Thu, 24 Apr 2025 23:24:58 -0300
+Date: Thu, 24 Apr 2025 23:45:03 -0300
 Architectures: amd64 i386
 Components: main
-Description: Repositorio APT para bool_quetion
+Description: Python module for asking yes/no or accept/cancel questions"
 MD5Sum:
- b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-all/Packages
- 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-all/Packages.gz
+ b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-amd64/Packages
+ 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-amd64/Packages.gz
+ b95ddebfbe37f9acb40bb3fcc6a49f5f              538 main/binary-i386/Packages
+ 5ddba7f6987ab092b6a8b9d6a48e41d0              411 main/binary-i386/Packages.gz
 SHA1:
- 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-all/Packages
- 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-all/Packages.gz
+ 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-amd64/Packages
+ 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-amd64/Packages.gz
+ 1485319fe1ad4d5c3d5a273b9c1ae54226933675              538 main/binary-i386/Packages
+ 1a58d91a57215693ee006fe7c273e0a0dc6cec33              411 main/binary-i386/Packages.gz
 SHA256:
- bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-all/Packages
- cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-all/Packages.gz
+ bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-amd64/Packages
+ cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-amd64/Packages.gz
+ bc3e7c8e9ce813bff773f755bbdf4e91c139ef7710dfe098649508cdd7af6e17              538 main/binary-i386/Packages
+ cb304e1d911237d68db50d385995dae1fb2cbdc016cbc1046401d4fe448bda45              411 main/binary-i386/Packages.gz
 SHA512:
- f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-all/Packages
- de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-all/Packages
+ f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-amd64/Packages
+ de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-amd64/Packages.gz
+ f376e0cd8bd4a47fafe3d42ff744b06d716fcc913c08cb354bbc941b25545a15035ae2df0b93b68fa0b1ecff2dc8e25a4f0a083decf15a441eb73b16469e7101              538 main/binary-i386/Packages
+ de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK8pAACgkQRwFN/qVU
-Zb3FkRAA6Bk+Wsnir8lEy7DbrfdaafUiKmF+n83Ln/+VFn0/7UroklHWS8YtgBrG
-UMUS648qZlybDtScBwv1NDRaJx7iZl0L8646bysD1plMkn92ZP7ydTbini+fae8b
-HNUqWgGTutP9WDSwHvjERkmw7nKxi4UtsUf3MQKKdAJdzNjN5cIVefehDqDwSFMB
-SOXZOXiE3QsXcTuzl5Xw15eVunsO5RrkE5+prdr9/pznuatFKWNct0R+LVQbBu9c
-JNxRncO7jrIdkY5v2X8GNvkJ9OAV7JNohZZ8NAQE3vFnFLtSoo82ankSPXSPLkgn
-ni5Cg8zrRA4fPlxGCHTzPdZlrXp3xstx0/CAhC0yXD0QmMGT5Z+0tLOZ0U2kdMhS
-RwsE62ZVRlCjcvVaz1eZeU00ZHyslcLBGOnrnKFB45t68FImHHht0mW95iWzpPR7
-5ViJwbhNHWu5pUs7wJougncD9FWfk/fK8vRpywz5qARwdEhiGZBrkiYLO5UYeIlx
-k9G0uektnU8/Ap6BlejrFO83tkzI2IyAndels6+9jYZiVnPf3lGTrPQaTf1JnBBJ
-QlmKRclmm7Jwrcurxx4FA9zApHe5sr3lyoo48K98yNiEd1iEI+OHeuFopi53df0R
-7kXQ/9AhNWvZNDSJTGF5U9NEgX+ml2cSnkdYVV7vV81DCM9U1n0=
-=vjvD
+iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK97wACgkQRwFN/qVU
+Zb1liw//WLdpxRpWBwkRX0atM8QPqXlwqOpHEsGKLqkW8CFGDrNIU4LjnEQXkAVU
+/RVkBlL4kmd+HakhF9HqnywXTT7nrshX7f+WcMF97sQR4ubevG4WvBVcast8Y8Uh
+8ZJsJcwCeJeKLGGwJyIjbnBzKQp3HyUR9BcS2c1rQv9M0cDxjPkSBt+MSQOaLFxF
+uu0FthZBWx11rNLQ2pzR3PD6Rd5IFAzGB+eKwHvnhc/bPVq2ZEW8Q0TthJMWEo3q
+t/Gh5ks6f7Sw1NCG6edF0ANuFun+U41HS5mKr0ZWWbdy7hNKBHlN+5Dhb+KIIbnq
+aCKbJVAN/pLAqBj73GIV6Cu9raifbCTWwy7wen8dIh8UkjJsoQGpX0F/cMaTiUnC
+dbffPFbzyMKaC+uyJn/cxYuAcWcfhJinVOqYcGytEPmCSKgT1AwZe/sFWCaj9NYI
+NLGdJ4sTccvBPKBwDce0IxwMglJ3CtYsIOcY8jUvCJVDTxZKnWcxoDK0nn0QLaYj
+znRQj1DVUSozrRltJHcfgahNS04mrY0+WEQgvFckec+CH+pEHsTYkBiVv34PZ6Id
+HgB/B/cKaDw5CtbfyEi0Wn2AGJ5bQeaZlC7NwFMg5t9Ir06EoL1eZVfiojin72Co
+pwfGkYjb/LosNd6wRPQDMMmssTO0S7qYHbb/OY8L3buSi99uSQY=
+=mkME
 -----END PGP SIGNATURE-----
