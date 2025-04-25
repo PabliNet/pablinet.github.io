@@ -6,7 +6,7 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Thu, 24 Apr 2025 23:45:03 -0300
+Date: Fri, 25 Apr 2025 02:52:28 +0000
 Architectures: amd64 i386
 Components: main
 Description: Python module for asking yes/no or accept/cancel questions"
@@ -32,17 +32,17 @@ SHA512:
  de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK97wACgkQRwFN/qVU
-Zb1liw//WLdpxRpWBwkRX0atM8QPqXlwqOpHEsGKLqkW8CFGDrNIU4LjnEQXkAVU
-/RVkBlL4kmd+HakhF9HqnywXTT7nrshX7f+WcMF97sQR4ubevG4WvBVcast8Y8Uh
-8ZJsJcwCeJeKLGGwJyIjbnBzKQp3HyUR9BcS2c1rQv9M0cDxjPkSBt+MSQOaLFxF
-uu0FthZBWx11rNLQ2pzR3PD6Rd5IFAzGB+eKwHvnhc/bPVq2ZEW8Q0TthJMWEo3q
-t/Gh5ks6f7Sw1NCG6edF0ANuFun+U41HS5mKr0ZWWbdy7hNKBHlN+5Dhb+KIIbnq
-aCKbJVAN/pLAqBj73GIV6Cu9raifbCTWwy7wen8dIh8UkjJsoQGpX0F/cMaTiUnC
-dbffPFbzyMKaC+uyJn/cxYuAcWcfhJinVOqYcGytEPmCSKgT1AwZe/sFWCaj9NYI
-NLGdJ4sTccvBPKBwDce0IxwMglJ3CtYsIOcY8jUvCJVDTxZKnWcxoDK0nn0QLaYj
-znRQj1DVUSozrRltJHcfgahNS04mrY0+WEQgvFckec+CH+pEHsTYkBiVv34PZ6Id
-HgB/B/cKaDw5CtbfyEi0Wn2AGJ5bQeaZlC7NwFMg5t9Ir06EoL1eZVfiojin72Co
-pwfGkYjb/LosNd6wRPQDMMmssTO0S7qYHbb/OY8L3buSi99uSQY=
-=mkME
+iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK+TYACgkQRwFN/qVU
+Zb2W+g/+Oih720Tb60bDeOfSQ3GAYR4nmosZsz/9mSAfAP4ZHmLSEJ/5zBI1Z+w2
+m853/FLmte8cHVPyORqcJPhk2kE23SQbsC3suEgvnJl7Y9Z68gqQ3W0OzujRdIwL
+Bn1R3+kO3uRpUc64HprmqeZHIcxSz6ntJRpv8yqCzPMWX656Q/Hz01aUxsRBywB7
+s18CXqrpwob/odV8x0hvm1Rz+jVjwIG0S8T6+4vOt4xcBzzD9kI9Q1d7/dKg4R9j
+B9ELpVQTM0J4HYK1m2eJHFseLW+vH3LX6v3VSvQLvPiGNWQN5pdLlD6Z8H+7QFlY
+ojLR974OCtXQAgcd2StkQsaPh0gCOr5krIdtBCP+9Wxn7ZyWlHoG9365/+dUBqgI
++OL+L0XmJD3wivnLsXicuqMYsmchHJTCamxcf+2+ATwfSuFNXL4ypNXdjWSPJ3Fu
+c5JfQ1EItdUy6R7JyVGNzRaHT86xSRCEIQZdi6KHyroLnRx9AmdbgHzQSldNoN7k
+f1Vk41fyqbifuKJh1setinKK0FNzd6JqIcBj/kAbGsrmdByr/OxjhYTgQDi4quQl
+D4qVewH+7lILKYx3aWg5dHsbmFZDCyLoZuKYFU3mFnf9xe0ytKC+5x65QaDq1cvA
+V5dgLI2rXL4W7fp3PecqH+i82HTTd/4iBW2QNktpxkhEKWL68gs=
+=gscN
 -----END PGP SIGNATURE-----
