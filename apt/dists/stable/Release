@@ -3,8 +3,8 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Thu, 24 Apr 2025 19:35:30 -0300
-Architectures: all
+Date: Thu, 24 Apr 2025 23:13:30 -0300
+Architectures: amd64 i386
 Components: main
 Description: Repositorio APT para bool_quetion
 MD5Sum:
