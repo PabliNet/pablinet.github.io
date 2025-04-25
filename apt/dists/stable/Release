@@ -3,7 +3,7 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Fri, 25 Apr 2025 02:52:28 +0000
+Date: Fri, 25 Apr 2025 02:52:28 UTC
 Architectures: amd64 i386
 Components: main
 Description: Python module for asking yes/no or accept/cancel questions"

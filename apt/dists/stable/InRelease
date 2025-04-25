@@ -6,7 +6,7 @@ Label: bool-quetion
 Suite: stable
 Version: 0.1.6.3
 Codename: stable
-Date: Fri, 25 Apr 2025 02:52:28 +0000
+Date: Fri, 25 Apr 2025 02:52:28 UTC
 Architectures: amd64 i386
 Components: main
 Description: Python module for asking yes/no or accept/cancel questions"
@@ -32,17 +32,17 @@ SHA512:
  de00f25d5d4aef370d5a76bb9375d16e8679dd2e7e89809a0e635009426ffb146494c7204c1519f7d5b71f77f763300750984227518f130aaa9485ba2d9bdd6a              411 main/binary-i386/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK+TYACgkQRwFN/qVU
-Zb2W+g/+Oih720Tb60bDeOfSQ3GAYR4nmosZsz/9mSAfAP4ZHmLSEJ/5zBI1Z+w2
-m853/FLmte8cHVPyORqcJPhk2kE23SQbsC3suEgvnJl7Y9Z68gqQ3W0OzujRdIwL
-Bn1R3+kO3uRpUc64HprmqeZHIcxSz6ntJRpv8yqCzPMWX656Q/Hz01aUxsRBywB7
-s18CXqrpwob/odV8x0hvm1Rz+jVjwIG0S8T6+4vOt4xcBzzD9kI9Q1d7/dKg4R9j
-B9ELpVQTM0J4HYK1m2eJHFseLW+vH3LX6v3VSvQLvPiGNWQN5pdLlD6Z8H+7QFlY
-ojLR974OCtXQAgcd2StkQsaPh0gCOr5krIdtBCP+9Wxn7ZyWlHoG9365/+dUBqgI
-+OL+L0XmJD3wivnLsXicuqMYsmchHJTCamxcf+2+ATwfSuFNXL4ypNXdjWSPJ3Fu
-c5JfQ1EItdUy6R7JyVGNzRaHT86xSRCEIQZdi6KHyroLnRx9AmdbgHzQSldNoN7k
-f1Vk41fyqbifuKJh1setinKK0FNzd6JqIcBj/kAbGsrmdByr/OxjhYTgQDi4quQl
-D4qVewH+7lILKYx3aWg5dHsbmFZDCyLoZuKYFU3mFnf9xe0ytKC+5x65QaDq1cvA
-V5dgLI2rXL4W7fp3PecqH+i82HTTd/4iBW2QNktpxkhEKWL68gs=
-=gscN
+iQIzBAEBCgAdFiEETv3SxjlIl+LjpAwhRwFN/qVUZb0FAmgK/EYACgkQRwFN/qVU
+Zb3B3xAAnoZxXo/cT8pZvBl0N0JRfLMrITM9IYJDOZD6uBnt7wzo+1X62fcCp3/I
+yF59pNCoPXw2n6Xl5jm/XT7betl6IuB6HmV6PfDewse9TvO6NFg7roxYeq/y/HPd
+36kAozJBmSDW9HtsGuw5wDzIh+XYdeEz/MOmLOMaqTy8m1rUYhk93HC5wXFpbRk7
+1PlOEeijhTHpGV7jM0cCCJFlnNCrD/lnktyHjHwCdMhxjZ3dntKOcSbJgx20PXfS
+DUne5j0QvJm81txehph5GXsDDnATqLUn07J2rr4JS57x20P/0ECugJH6k2KygP5X
+y+ZshG6jQnfgaFNpp8zWvh1Lm6zUZ6ZETG12JX0o73CxNAqJU1Lk6GKLdQyrn9gL
+TJXpj/9gHEGd0a7jeZRYoyqxYNVzRMjYEhn7nIEeAbd8+EadoocYY+3hqZSWlgDT
+SkuiAAKPMkyiwmiOcxuBaD/wQ2GcLZZqnK9QEb6CpK5uddk69eo9LY4jCoF09gcw
+rZojhCA4bn6z2/ZhCak8vsqia32eNYQI46aQOMLpMd0X25idXXGb2ZY2iZnw4sgt
+C0Q3gjS2LZVeKDwy9FdhWpcWugGEoJ7TTkvVnZgKEfnfDhrWchlhSumO9opmTIBl
++/0UJINKGTerWLOKjhSPfomkJgF69SGLvACNWC3KR3NnalJFPxE=
+=LGa2
 -----END PGP SIGNATURE-----
