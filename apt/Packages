@@ -5,11 +5,11 @@ Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Installed-Size: 23
 Filename: debs/python-bool-quetion_0.1.7-1_all.deb
 Size: 4876
-MD5sum: 2e3a6af84ba0377e4df93d9f7f9fda25
-SHA1: 3367cf79d5ffdbaeb7d4a1975baaddcae7299232
-SHA256: 9296b6093ecf9837b076ad971d0a86a2e80d30136498e57bfbc34fbf89b32b2d
+MD5sum: f59720caea5c25bf9611456ef3f0909d
+SHA1: 5ad1c1c342a3147a6f30db330654928063b510fc
+SHA256: cd6fcab026712edcc2b617656693be323ef148239b9d3170aa83e28a7b2406fb
 Section: python
 Priority: optional
 Homepage: https://github.com/PabliNet/bool_quetion
-Description: Python-Module for asking yes/no or accept/cancel questions.
+Description: Python-module for asking yes/no or accept/cancel questions.
 
