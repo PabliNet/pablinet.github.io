@@ -1,13 +1,13 @@
 Package: python-bool-quetion
-Version: 0.1.7-1
+Version: 0.1.7.1-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Installed-Size: 23
-Filename: debs/python-bool-quetion_0.1.7-1_all.deb
+Filename: debs/python-bool-quetion_0.1.7.1-1_all.deb
 Size: 4876
-MD5sum: f59720caea5c25bf9611456ef3f0909d
-SHA1: 5ad1c1c342a3147a6f30db330654928063b510fc
-SHA256: cd6fcab026712edcc2b617656693be323ef148239b9d3170aa83e28a7b2406fb
+MD5sum: c19b7fd89a6e5ef3d2daede01b535254
+SHA1: 072744c04222279b07c28f9795b4d42accd1f4ed
+SHA256: 2d09cd2211f6b636bf32a552d466394b50f08786c8b013a233a1382db6c2f411
 Section: python
 Priority: optional
 Homepage: https://github.com/PabliNet/bool_quetion
