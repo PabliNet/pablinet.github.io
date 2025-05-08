@@ -1,15 +1,31 @@
-Package: python-bool-quetion
-Version: 0.1.7.4-1
+Package: python3-bool-quetion
+Version: 0.1.8-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
-Installed-Size: 23
-Filename: debs/python-bool-quetion_0.1.7.4-1_all.deb
-Size: 4876
-MD5sum: 1368f95e569098907476e6aef5c5a809
-SHA1: 419b88d8a09f235512d0ceae473ec3eb87f9fe02
-SHA256: c76288de5a1325dd0a7aee054822d841310805e9a0819781343d184dbe83e17e
+Installed-Size: 21
+Depends: python3:any, python3-localized-message
+Filename: debs/python3-bool-quetion_0.1.8-1_all.deb
+Size: 4264
+MD5sum: 63a67c8f08afe1df3ba0cbea4ee979b9
+SHA1: 3f026d6f5793b0bb630bc9e60b6758266fc5f745
+SHA256: a74602a9b7ebc41921b7b22f8366b46b1de879fdf76725f6c991cefcd6c62c6f
 Section: python
 Priority: optional
 Homepage: https://github.com/PabliNet/bool_quetion
 Description: Python-module for asking yes/no or accept/cancel questions.
+
+Package: python3-localized-message
+Version: 0.1.1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3
+Filename: debs/python3-localized-message_0.1.1_all.deb
+Size: 1392
+MD5sum: 23b1afc118b9ef39f7a0748b2a213270
+SHA1: a7489c2e1753d180d925beed19c95ffdb1dcf949
+SHA256: ac3290dfab9ee43cb464baf3a95aae6b96b8c3c13cb8bda3cdb6d7b283a5eeb5
+Section: python
+Priority: optional
+Homepage: https://github.com/pablinet/localized-message
+Description: Python module to print messages according to the $LANG environment variable.
 
