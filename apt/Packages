@@ -1,3 +1,32 @@
+Package: flipcase
+Version: 0.0.1-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3
+Filename: debs/flipcase_0.0.1-1_all.deb
+Size: 1604
+MD5sum: e991817facced6c1d4f6126a5ddaab9d
+SHA1: fab54445ea5901da35d26da385de3e0473b3ad25
+SHA256: d22659e93a73a3697e61e962409924b98b4c3ddc93a3d27e7987bfe2321df22a
+Section: utils
+Priority: optional
+Homepage: https://github.com/pablinet/localized-message
+Description: Use capital, capitalize, lower, title, or upper to modify your text.
+ $ capital hola world
+ Hello world
+ .
+ $ capitalize hola world
+ Hello world
+ .
+ $ lower holA WoRLD
+ hello world
+ .
+ $ title hola world
+ Hello World
+ .
+ $ upper hola world
+ HELLO WORLD
+
 Package: python3-bool-quetion
 Version: 0.1.8-1
 Architecture: all
