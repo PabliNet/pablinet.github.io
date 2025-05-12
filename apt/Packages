@@ -1,3 +1,18 @@
+Package: factura
+Version: 0.0.1-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: poppler-utils
+Filename: debs/factura_0.0.1-1_all.deb
+Size: 1432
+MD5sum: 03ce3b348888a25e9c7209d315eea285
+SHA1: 3be5f7f7caae7c1fb207d1bab7623bd246aa828a
+SHA256: f19ce5ed87bc8a363556cc534ba7721880052641d50afabc1cf0c5345b1d9584
+Section: utils
+Priority: optional
+Homepage: https://github.com/pablinet/factura
+Description: Separa el PDF de la factura en original, duplicado y triplicado.
+
 Package: flipcase
 Version: 0.0.1-1
 Architecture: all
