@@ -14,15 +14,15 @@ Homepage: https://github.com/pablinet/factura
 Description: Separa el PDF de la factura en original, duplicado y triplicado.
 
 Package: flipcase
-Version: 0.0.1-1
+Version: 0.1-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
-Filename: debs/flipcase_0.0.1-1_all.deb
-Size: 1608
-MD5sum: d783b0ffc8f1b70d7be265873b61f48a
-SHA1: 54ad4fb8288c3746159694fc6ee702d7d778c970
-SHA256: 2b6f9d29ef385383a4fe3a26abf3558d14c05c365b8bf99dd9fa30f9ffce9f8f
+Filename: debs/flipcase_0.1-1_all.deb
+Size: 1804
+MD5sum: 7e8ce1c0e8b4936e6562f8d918ceb82b
+SHA1: db81076d88a1aa0022e0ef33f88c323b4dee88ec
+SHA256: a1ff07d89f220bf0b7c41ca2f2104624867917270bdb8c30155fb75fda80fe26
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/flipcase
