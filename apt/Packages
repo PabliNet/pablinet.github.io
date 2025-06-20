@@ -33,6 +33,21 @@ Description: Use capital, capitalize, lower, title, or upper to modify your text
  title hola world        → Hello World
  upper hola world        → HELLO WORLD
 
+Package: kccp
+Version: 0.0.1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: kdeconnect
+Filename: debs/kccp_0.0.1-1_all.deb
+Size: 1920
+MD5sum: 24ee1dcd09b9a66eb5a6ffe0b0413ae3
+SHA1: bb4e544979b3cbd20e7efadd394809fc63c4fa1b
+SHA256: 8b0c084e6863e1b8fdd57343611fbb3acb97a21a2c7533f78cc9cc734a469859
+Section: utils
+Priority: optional
+Homepage: https://github.com/pablinet/unleaf
+Description: Share files with KDE Connect using kdeconnect-cli.
+
 Package: python3-bool-quetion
 Version: 0.1.8-1
 Architecture: all
