@@ -34,15 +34,15 @@ Description: Use capital, capitalize, lower, title, or upper to modify your text
  upper hola world        → HELLO WORLD
 
 Package: kccp
-Version: 0.0.3
+Version: 0.0.4
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: kdeconnect
-Filename: debs/kccp_0.0.3-1_all.deb
-Size: 1948
-MD5sum: 74f2467697ef8c69addd730cfd38444e
-SHA1: 751a0be2d5844f31b1256a0bb033d71f75954db2
-SHA256: 8bdb3759d372e84444bb84e96e13bf806481cd582b98e8ae7e114bc78e04be81
+Filename: debs/kccp_0.0.4-1_all.deb
+Size: 2024
+MD5sum: 774a9889422d521e4a69e4fcf00132bd
+SHA1: 855300d2e6f15ea072a676e5f1ec5ef451c66e68
+SHA256: db468069f09b4db4537217eca669aa2ef86cc1da64fedfd2736b44989b655bac
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/unleaf
