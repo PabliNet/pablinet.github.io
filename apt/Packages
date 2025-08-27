@@ -49,18 +49,18 @@ Homepage: https://github.com/pablinet/unleaf
 Description: Share files with KDE Connect using kdeconnect-cli.
 
 Package: python3-bbansi
-Version: 0.0.4-1
+Version: 0.0.4-2
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
 Conflicts: flipcase
 Replaces: flipcase
 Provides: flipcase
-Filename: debs/python3-bbansi_0.0.4-1_all.deb
-Size: 18504
-MD5sum: e7a1aa4d8e14fd91b4fb8f02e629b935
-SHA1: 90b0efa3971f948ed66833001465db81d22734a6
-SHA256: 666ba3cf0ccfe12c6a92fe1075dcdeb67bb1d85a71062b8b0f8a1a17a2d24a74
+Filename: debs/python3-bbansi_0.0.4-2_all.deb
+Size: 18512
+MD5sum: 3a76a63ff903079f4b3396b728819bd8
+SHA1: 55aefa04068305f462fa5472d8d2005d50711739
+SHA256: a3c585ba48b166bcad886d632e8f80da70e305be02c28334c92405db47bdb070
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/bbansi
