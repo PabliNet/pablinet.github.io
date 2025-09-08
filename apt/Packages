@@ -56,11 +56,11 @@ Depends: python3
 Conflicts: flipcase
 Replaces: flipcase
 Provides: flipcase
-Filename: debs/python3-bbansi_0.4-1_all.deb
-Size: 10948
-MD5sum: d406ab3f8cd600e87c64daee82215d5b
-SHA1: 34b3ca5e76c7865c80532b7446a1e9cb3b862265
-SHA256: db1f06234e6d867e36aeb634c718b06223415670565e5c90b7b84e7d56e8270c
+Filename: debs/python3-bbansi_0.4.1-1_all.deb
+Size: 10952
+MD5sum: 75bf24a441e3a52d7d827954907fdf15
+SHA1: d3256a63efdbb47b8a33f50caa67ccd0e87662c8
+SHA256: 84a0d2ec4e512d26ce44443fa51673ffb0e9948096ce391c2e037d6ce1dc9006
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/bbansi
