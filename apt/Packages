@@ -1,3 +1,18 @@
+Package: dpkg-get
+Version: 0.1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: dpkg
+Filename: debs/dpkg-get_0.1_all.deb
+Size: 3448
+MD5sum: 329e07c325059e7739cda64532502e12
+SHA1: 3303d24538e47f511626584adf6fef9c40ea99c5
+SHA256: 8cdf3d4b6861a2c56fb9c0127558439bf79e8d2eee25ae16ac514b285776e85b
+Section: admin
+Priority: optional
+Homepage: https://github.com/pablinet/unleaf
+Description: A script to list, filter and manage packages from APT/dpkg selections.
+
 Package: factura
 Version: 0.0.1-1
 Architecture: all
