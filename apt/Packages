@@ -124,15 +124,15 @@ Homepage: https://github.com/pablinet/localized-message
 Description: Python module to print messages according to the $LANG environment variable.
 
 Package: unleaf
-Version: 0.0.8
+Version: 0.1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: poppler-utils
-Filename: debs/unleaf_0.0.8-1_all.deb
-Size: 2192
-MD5sum: 359e21c00a82db6eddf21f990559614d
-SHA1: bb82ff09132537b3cdb76e7e78fad853aa16a137
-SHA256: 5660f9774df035852687826f7e8fd07ac1b5c7faaef8df9ee4e90daf03030e95
+Filename: debs/unleaf_0.1-1_all.deb
+Size: 2172
+MD5sum: b2c5f9272840fe9e06a16da5e5fdf36f
+SHA1: 5ab5304a60e10cac61453a7c8981122bdcbbce0a
+SHA256: 835a13a7ba3ac2fac87a55c5b19a2691827f4ef7fc93ed82b1908394834b414c
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/unleaf
