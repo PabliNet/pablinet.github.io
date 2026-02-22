@@ -63,6 +63,37 @@ Priority: optional
 Homepage: https://github.com/pablinet/unleaf
 Description: Share files with KDE Connect using kdeconnect-cli.
 
+Package: owm
+Version: 0.1-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3
+Filename: debs/owm_0.1-1_all.deb
+Size: 6152
+MD5sum: 94a92356414772ae3dfe24f91372d038
+SHA1: 5f4d822d3686bbbea597c810fe34c6230206e892
+SHA256: f9508e30ce6bc366c050289c5b43efae03b2fd2ca838a9767e5a63f27806c4bd
+Section: utils
+Priority: optional
+Homepage: https://github.com/pablinet/bbansi
+Description: owm is a lightweight command-line weather client that retrieves
+ current weather data from OpenWeatherMap.
+ .
+ It supports multiple location methods including city name,
+ geographic coordinates, or separate latitude and longitude values.
+ .
+ Users can select specific weather fields such as temperature,
+ feels-like temperature, pressure, wind, and visibility, and
+ customize output formatting for use in status bars, panels,
+ and tiling window managers.
+ .
+ The tool supports configurable units, language selection,
+ custom output separators, refresh intervals, and a special
+ temperature/feels-like alternating mode designed for desktop
+ widgets such as Conky.
+ .
+ An OpenWeatherMap API key is required.
+
 Package: python3-bbansi
 Version: 0.4.2-2
 Architecture: all
