@@ -68,14 +68,14 @@ Version: 0.1-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
-Filename: debs/owm_0.1-1_all.deb
-Size: 6152
-MD5sum: 94a92356414772ae3dfe24f91372d038
-SHA1: 5f4d822d3686bbbea597c810fe34c6230206e892
-SHA256: f9508e30ce6bc366c050289c5b43efae03b2fd2ca838a9767e5a63f27806c4bd
+Filename: debs/owm_0.2-1_all.deb
+Size: 6384
+MD5sum: 10f39c864e383db5335c4df78f60a75a
+SHA1: 237f680e6f14604b3a425abc4f7a15c68cabf60c
+SHA256: 8232f96940eb310bc7302cd173de508ae5ba63e20065678f0ca936a7489b1092
 Section: utils
 Priority: optional
-Homepage: https://github.com/pablinet/bbansi
+Homepage: https://github.com/pablinet/owm
 Description: owm is a lightweight command-line weather client that retrieves
  current weather data from OpenWeatherMap.
  .
