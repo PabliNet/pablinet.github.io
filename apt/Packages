@@ -69,10 +69,10 @@ Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
 Filename: debs/owm_0.4.0-2_all.deb
-Size: 9072
-MD5sum: 9dc762032ba72296a346188456a9003d
-SHA1: 47c10fef8c4d8149b22b680300d6876212c7ccf7
-SHA256: ed4f487d451b6e2260f08db993fb1a69238b353b2ba09507e2857d7a2ede6b1d
+Size: 9080
+MD5sum: d54f4fc94c4f67251a9753fb89409ead
+SHA1: 0fb713206035f0a0d74f067fd2e341e6f5a304ec
+SHA256: 622205be9b87bdb57789b4e85de2e1b7f4517a6b7d6b44dacf816a84f98593a8
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/owm
