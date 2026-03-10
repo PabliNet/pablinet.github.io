@@ -64,15 +64,15 @@ Homepage: https://github.com/pablinet/unleaf
 Description: Share files with KDE Connect using kdeconnect-cli.
 
 Package: owm
-Version: 0.5.0-1
+Version: 0.5.1-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
-Filename: debs/owm_0.5.0-1_all.deb
+Filename: debs/owm_0.5.1-1_all.deb
 Size: 10052
-MD5sum: bb1e517cd5a59c9366776393beb51039
-SHA1: 149ccdc85b498d8c85e9aae2f8bfd24641d1546d
-SHA256: fbf558dd288ab7a900f9fde2676524022ba38e3b73caedbbbd1e907fde0b0af6
+MD5sum: a83dcfc69093d5321bd136c0cf1ea54e
+SHA1: a880ab5a8503dbcca68303385b792026d44782eb
+SHA256: 62b2181d772e3a6cc0061b5b5b57f21c3380271d3aeb0e29f30918cbe33a8a6c
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/owm
