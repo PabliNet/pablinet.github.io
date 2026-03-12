@@ -154,6 +154,40 @@ Priority: optional
 Homepage: https://github.com/pablinet/localized-message
 Description: Python module to print messages according to the $LANG environment variable.
 
+Package: python3-owm
+Version: 0.5.2-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3
+Conflicts: owm
+Replaces: owm
+Provides: owm
+Filename: debs/python3-owm_0.5.2-1_all.deb
+Size: 10208
+MD5sum: 64a5f961f84e115ac42036444fe584bb
+SHA1: d6c6b8775ccc2791721c91ee4d6719d3a79e7181
+SHA256: 15f5117797420f9d59c1d2a2128e0ded561336efa8ee55a629352a3424b8bc0a
+Section: utils
+Priority: optional
+Homepage: https://github.com/pablinet/owm
+Description: owm is a lightweight command-line weather client that retrieves
+ current weather data from OpenWeatherMap.
+ .
+ It supports multiple location methods including city name,
+ geographic coordinates, or separate latitude and longitude values.
+ .
+ Users can select specific weather fields such as temperature,
+ feels-like temperature, pressure, wind, and visibility, and
+ customize output formatting for use in status bars, panels,
+ and tiling window managers.
+ .
+ The tool supports configurable units, language selection,
+ custom output separators, refresh intervals, and a special
+ temperature/feels-like alternating mode designed for desktop
+ widgets such as Conky.
+ .
+ An OpenWeatherMap API key is required.
+
 Package: unleaf
 Version: 0.2
 Architecture: all
