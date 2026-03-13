@@ -145,11 +145,11 @@ Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3
 Breaks: owm (<< 0.5.2-1)
 Replaces: owm (<< 0.5.2-1)
-Filename: debs/python3-owm_0.5.2-2_all.deb
-Size: 10216
-MD5sum: a83acc6d834691a208af857af4035e66
-SHA1: 94d7cd3890eb2263b0924164619ed0a77aee7d75
-SHA256: 52b2ea161e9c92544217b05689b63b0abc8045bf1bcd66afc47d9890eed17634
+Filename: debs/python3-owm_0.5.3-1_all.deb
+Size: 9676
+MD5sum: fc34495052be9c094e3537baa0e1a9ba
+SHA1: bf2f96e43e2a81b37fa7d8dab16e52512a7db658
+SHA256: 1677389249991949b7015a91ee37a5efdf30a3690aa28c33c6bad4dcf44a76bd
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/owm
