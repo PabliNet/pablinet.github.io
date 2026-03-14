@@ -139,17 +139,17 @@ Homepage: https://github.com/pablinet/localized-message
 Description: Python module to print messages according to the $LANG environment variable.
 
 Package: python3-owm
-Version: 0.5.4-2
+Version: 0.5.4-3
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
-Depends: python3
+Depends: python3, python3-requests
 Breaks: owm (<< 0.5.2-1)
 Replaces: owm (<< 0.5.2-1)
-Filename: debs/python3-owm_0.5.4-1_all.deb
-Size: 10368
-MD5sum: b029b9b64458a5b772c793fa0b8eba2b
-SHA1: 3e5d6d6a7bcc6a3d0e4bfa45013442464961aecc
-SHA256: de59f06b154f2de58cc3d89514ab764e0df3c50fdcc847124561e151da4d21a0
+Filename: debs/python3-owm_0.5.4-3_all.deb
+Size: 10380
+MD5sum: 3e2933ce9c4962216e92f50db641a766
+SHA1: fbf703ccc69cfb7c2dff432b377b944551fb5571
+SHA256: eb35520c195d263abc570bf7f333a85cb6f022bb1f23f9025f57b6eaafea4bb6
 Section: utils
 Priority: optional
 Homepage: https://github.com/pablinet/owm
