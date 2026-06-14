@@ -48,6 +48,24 @@ Description: Use capital, capitalize, lower, title, or upper to modify your text
  title hola world        → Hello World
  upper hola world        → HELLO WORLD
 
+Package: imgrid
+Version: 0.0.3-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3, python3-pyimgrid
+Filename: debs/imgrid_0.0.3-1_all.deb
+Size: 1968
+MD5sum: 5d6f15bed715f3881b805939aca31f89
+SHA1: ae6bd98dc6474ecc1072955f44c03e5f2c65c5f3
+SHA256: 24a93f57e9a9b9729a2a091be9fff9f2d06937d274916e6198efffb25e416073
+Section: utils
+Priority: optional
+Homepage: https://github.com/PabliNet/imgrid
+Description: command-line tool to generate a grid image
+ Imgrid is a CLI tool that arranges a single input image
+ into a grid layout (columns × rows), with configurable
+ spacing and background color.
+
 Package: kccp
 Version: 0.0.4
 Architecture: all
@@ -170,6 +188,42 @@ Description: owm is a lightweight command-line weather client that retrieves
  widgets such as Conky.
  .
  An OpenWeatherMap API key is required.
+
+Package: python3-pyimgrid
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3, python3-pil
+Filename: debs/python3-pyimgrid_0.1.0-1.deb
+Size: 1368
+MD5sum: 88ca8d5ec61f90c502f8f88349f7fa06
+SHA1: 6b73a5e9a3470b017b3845237345818886049f6f
+SHA256: 9f7439ab3312966fcb9dbedd2f2d94c8b68a9a230d4a7dca13e21f3f12a2e994
+Section: python
+Priority: optional
+Homepage: https://pypi.org/project/pyimgrid
+Description: generate a grid image from an input image
+ Pyimgrid is a small Python library that arranges a single
+ input image into a grid layout (rows x columns), with
+ configurable spacing and background color.
+
+Package: tkimgrid
+Version: 0.0.3-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: python3, python3-cairosvg, python3-pyimgrid, python3-tk
+Filename: debs/tkimgrid_0.0.3-1_all.deb
+Size: 5420
+MD5sum: 1d8877350c685a9d0241d1d289d576df
+SHA1: da216dabfae4a1aef2c8854d8237a449f0cc0103
+SHA256: b66f2fc585e9296288daef360ab9a273f22e4e022e39e50da5b390cd67e0e558
+Section: utils
+Priority: optional
+Homepage: https://github.com/PabliNet/imgrid
+Description: graphical tool to generate a grid image
+ Tkimgrid is a Tkinter-based GUI for arranging a single
+ input image into a grid layout (columns × rows), with
+ configurable spacing and background color.
 
 Package: unleaf
 Version: 0.2
