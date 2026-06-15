@@ -221,16 +221,16 @@ Description: generate a grid image from an input image
  configurable spacing and background color.
 
 Package: qtimgrid
-Version: 0.0.3-1
+Version: 0.0.3-2
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: imgrid-common, python3, python3-pil.imagetk, python3-pyimgrid, python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets
 Recommends: plasma-integration
-Filename: debs/qtimgrid_0.0.3-1_all.deb
+Filename: debs/qtimgrid_0.0.3-2_all.deb
 Size: 5544
-MD5sum: 3e007c1e6a929cff75925b6aad32bdc2
-SHA1: dc6360f5e58d67087c132242a1282d5bfa56ed48
-SHA256: a152026d6d9a646ad5f83b644c9b51665c0f31fbe3c7812965bb94b6255a509a
+MD5sum: 4823b1bb127c7debe3afec3500ab9cab
+SHA1: 3d07de94ea460d8fd664bc9f1c5233988545497f
+SHA256: c8d59eb5c6818422e3019b31b8fabe89b26f5bbb8f6e420dd082a0cb9a1d5817
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
