@@ -66,6 +66,19 @@ Description: command-line tool to generate a grid image
  into a grid layout (columns × rows), with configurable
  spacing and background color.
 
+Package: imgrid-common
+Version: 0.0.3-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Filename: debs/imgrid-common_0.0.3-1_all.deb
+Size: 1032
+MD5sum: 69a6ecab05f38c29ae58c8e7bed852fd
+SHA1: 3f0f83e0ad87b47f893e3a18b03748c03e3629bc
+SHA256: eab91f9b468bf7378586ae84d20af6f546e4abdf6e6fcfa9b04a65143deaf541
+Section: utils
+Priority: optional
+Description: Shared icons and resources for ImGrid GUI packages.
+
 Package: kccp
 Version: 0.0.4
 Architecture: all
@@ -207,16 +220,35 @@ Description: generate a grid image from an input image
  input image into a grid layout (rows x columns), with
  configurable spacing and background color.
 
-Package: tkimgrid
-Version: 0.0.3-2
+Package: qtimgrid
+Version: 0.0.3-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
-Depends: python3, python3-cairosvg, python3-pil.imagetk, python3-pyimgrid, python3-tk
-Filename: debs/tkimgrid_0.0.3-2_all.deb
-Size: 5424
-MD5sum: cbeb23c4a21f0db3034ae8f7cdefc738
-SHA1: 5655ca2a0b5e33e362d23bed8ed81499b0d5a4b3
-SHA256: 6613818a56c140468c64c380471b4d62836df444d69ca6f8674a140d1459fdbd
+Depends: imgrid-common, python3, python3-pil.imagetk, python3-pyimgrid, python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets
+Recommends: plasma-integration
+Filename: debs/qtimgrid_0.0.3-1_all.deb
+Size: 5540
+MD5sum: b7bf712a52143050000fab76e236d6de
+SHA1: 87ccb2a854b0cc4c0630c72228a8e2a8f96ef00b
+SHA256: db41e2cf47ddfc5feace015e512bdbda39b841b870b952ab3fe6afda20cfe24d
+Section: utils
+Priority: optional
+Homepage: https://github.com/PabliNet/imgrid
+Description: graphical tool to generate a grid image
+ QtImGrid is a Qt-based GUI for arranging a single
+ input image into a grid layout (columns × rows), with
+ configurable spacing and background color.
+
+Package: tkimgrid
+Version: 0.0.3-3
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: imgrid-common, python3, python3-cairosvg, python3-pil.imagetk, python3-pyimgrid, python3-tk
+Filename: debs/tkimgrid_0.0.3-3_all.deb
+Size: 5232
+MD5sum: 47225a77c098d4e7e799ce917bda9018
+SHA1: 5aa33e83eb725cf8c05d2a4913e39ca4c8211350
+SHA256: fb2d1bef36d51efc5074dedeb59f9cc77674c11758bae7523eeb30ebc184c041
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
