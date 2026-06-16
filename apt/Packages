@@ -48,6 +48,25 @@ Description: Use capital, capitalize, lower, title, or upper to modify your text
  title hola world        → Hello World
  upper hola world        → HELLO WORLD
 
+Package: gktimgrid
+Version: 0.1.0-1
+Architecture: all
+Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
+Depends: gir1.2-gdkpixbuf-2.0, gir1.2-gtk-4.0, imgrid-common, python3, python3-gi, python3-pil, python3-pyimgrid
+Recommends: plasma-integration
+Filename: debs/gtkimgrid_0.1-1_all.deb
+Size: 7952
+MD5sum: eb8bb89487c84ff1d56cc3ef01eda4b9
+SHA1: 7432723d442660332c6f5062940b900c633a29e4
+SHA256: 97aba9501f6bb1c51b742afed9113d986547f2b3dce7a1a9071b19714939fa7b
+Section: utils
+Priority: optional
+Homepage: https://github.com/PabliNet/imgrid
+Description: graphical tool to generate a grid image
+ GTK ImGrid is a GTK-based GUI for arranging a single
+ input image into a grid layout (columns × rows), with
+ configurable spacing and background color.
+
 Package: imgrid
 Version: 0.0.3-1
 Architecture: all
@@ -221,16 +240,16 @@ Description: generate a grid image from an input image
  configurable spacing and background color.
 
 Package: qtimgrid
-Version: 0.0.3-2
+Version: 0.1.0-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
-Depends: imgrid-common, python3, python3-pil.imagetk, python3-pyimgrid, python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets
+Depends: imgrid-common, python3, python3-pil, python3-pyimgrid, python3-pyside6.qtcore, python3-pyside6.qtgui, python3-pyside6.qtwidgets
 Recommends: plasma-integration
-Filename: debs/qtimgrid_0.0.3-2_all.deb
-Size: 5544
-MD5sum: 4823b1bb127c7debe3afec3500ab9cab
-SHA1: 3d07de94ea460d8fd664bc9f1c5233988545497f
-SHA256: c8d59eb5c6818422e3019b31b8fabe89b26f5bbb8f6e420dd082a0cb9a1d5817
+Filename: debs/qtimgrid_0.1-1_all.deb
+Size: 6864
+MD5sum: 70fd60c7b0d5f40908ab25e53efb9449
+SHA1: 998e14b68d0838137154ecaac7dd85a229c5550b
+SHA256: 90ee361483fddc34aaee9d9b112d4f57b66df7ea1ae40f3c42d25e16c0301ae1
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
