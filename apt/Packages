@@ -49,16 +49,15 @@ Description: Use capital, capitalize, lower, title, or upper to modify your text
  upper hola world        → HELLO WORLD
 
 Package: gtkimgrid
-Version: 0.1.0-1
+Version: 0.1.0-2
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: gir1.2-gdkpixbuf-2.0, gir1.2-gtk-4.0, imgrid-common, python3, python3-gi, python3-pil, python3-pyimgrid
-Recommends: plasma-integration
-Filename: debs/gtkimgrid_0.1.0-1_all.deb
-Size: 7948
-MD5sum: 451c76d07aa84d2df04c96ce58fe029d
-SHA1: 06e60ba0363725318adb0b80bf5507daf9076f0e
-SHA256: c9ebe60cd4653ce4ff849f010e723dd63a6cb721b8d020a750a2e4ec076c717e
+Filename: debs/gtkimgrid_0.1.0-2_all.deb
+Size: 7928
+MD5sum: 6331160176046703dca9af886b62e382
+SHA1: 9fa9209f84a55e10abb820b674ba36b8dd7c9696
+SHA256: fa65ad73a9349e90c91195a97f73ce7ad00e130ba1c14a9d21715904816669df
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
