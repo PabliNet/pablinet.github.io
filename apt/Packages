@@ -54,10 +54,10 @@ Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: gir1.2-gdkpixbuf-2.0, gir1.2-gtk-3.0, imgrid-common, python3, python3-gi, python3-gi-cairo, python3-pil, python3-pyimgrid
 Filename: debs/gtk3imgrid_0.1.1-1_all.deb
-Size: 8248
-MD5sum: cbe74cc3694d9e5c02f59893d630cdea
-SHA1: b6295181f0b6dca9cd0e006ea097f34ef1cc6056
-SHA256: 7730e3a225a1b440a042d6b4771459f493370ad401187ddecc109500d44c2e75
+Size: 7992
+MD5sum: 035143bfea0083aa1f8d8d361de70da6
+SHA1: 6ff9aa91262096416db674d2ee4987162f2a9bb4
+SHA256: e153a4ac6b3879438c74864a0935458ca344d5865665df14e86bd1031b22b306
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
@@ -72,10 +72,10 @@ Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: gir1.2-gdkpixbuf-2.0, gir1.2-gtk-4.0, imgrid-common, python3, python3-gi, python3-pil, python3-pyimgrid
 Filename: debs/gtkimgrid_0.1.1-1_all.deb
-Size: 7964
-MD5sum: f9aba305802ad51aa4ea2782cf5296e1
-SHA1: 869784f8f805c7a8bbb5c02f7165b62737145385
-SHA256: eeff1963b8d62a4ca3049ae3e40d4baccfeb4c27af41a19948ed33c337c5ae77
+Size: 7972
+MD5sum: c52476f2a79c2b52db96ecd9fb82cd49
+SHA1: 17ed01c11d063c304f634bea067f8dd1ad8e1679
+SHA256: 25ca764360505539eacd61855d1e8061f68841e61c36ee02499973f715bd98f9
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
@@ -264,9 +264,9 @@ Depends: imgrid-common, python3, python3-pil, python3-pyimgrid, python3-pyside6.
 Suggests: plasma-integration
 Filename: debs/qtimgrid_0.1.0-2_all.deb
 Size: 6872
-MD5sum: 6cf028a93c325433102a4a06bfe196b7
-SHA1: 6f765421556c08bbf09a53505d7873497cec3c5d
-SHA256: af3233c4cf43bbc59b644033a984d04cfa0de4a38bcca0ea95faf03030a332ba
+MD5sum: b69f6e4250422da2a3592db208463d06
+SHA1: 74d5621b2f36ac1c7cb98b4ce002f5fa5b17db64
+SHA256: 3e4b8ef79a86af51128c644b9e9f78b51d4287c58da31be01805c432c24dd50b
 Section: utils
 Priority: optional
 Homepage: https://github.com/PabliNet/imgrid
