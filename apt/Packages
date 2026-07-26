@@ -257,15 +257,15 @@ Description: owm is a lightweight command-line weather client that retrieves
  An OpenWeatherMap API key is required.
 
 Package: python3-pyimgrid
-Version: 0.1.0-1
+Version: 0.1.2-1
 Architecture: all
 Maintainer: Pablo Alejandro Carravetti <gpablinux@gmail.com>
 Depends: python3, python3-pil
-Filename: debs/python3-pyimgrid_0.1.0-1.deb
-Size: 1368
-MD5sum: 88ca8d5ec61f90c502f8f88349f7fa06
-SHA1: 6b73a5e9a3470b017b3845237345818886049f6f
-SHA256: 9f7439ab3312966fcb9dbedd2f2d94c8b68a9a230d4a7dca13e21f3f12a2e994
+Filename: debs/python3-pyimgrid_0.1.2-1_all.deb
+Size: 1640
+MD5sum: 3db43ec7f5d6488c9945137b503750f8
+SHA1: 2eaa39b121cac80ed8c5e0f783f945bc38f22bda
+SHA256: 202e96c076a768eb85bc1cbbe17a8e9e515124d5a8a51ddb59db5abe0f6ddedf
 Section: python
 Priority: optional
 Homepage: https://pypi.org/project/pyimgrid
